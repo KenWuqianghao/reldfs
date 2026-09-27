@@ -1,0 +1,41 @@
+SELECTION (backtests only)
+  rel-amazon/user-churn          c13_fam:b0pe       bt deltas +0.00485 +0.00465 +0.00497 +0.00463  mean +0.00478  eligible
+  -> rel-amazon/user-churn: c13_fam:b0pe
+  rel-avito/user-clicks          c13_fam:b0gc       bt deltas +0.01245 +0.02100 +0.02484 +0.02319  mean +0.02037  eligible
+  rel-avito/user-clicks          c13_fam:b0gp       bt deltas +0.02414 +0.02685 +0.03184 +0.02736  mean +0.02755  eligible
+  rel-avito/user-clicks          c13_fam:b0pe       bt deltas +0.00066 +0.00742 +0.02194 +0.00300  mean +0.00825  eligible
+  -> rel-avito/user-clicks: c13_fam:b0gp
+  rel-avito/user-visits          c13_fam:b0gc       bt deltas +0.00114 +0.00388 +0.00094 -0.00047  mean +0.00137  -
+  rel-avito/user-visits          c13_fam:b0gp       bt deltas +0.00007 -0.00315 -0.00070 -0.00048  mean -0.00106  -
+  rel-avito/user-visits          c13_fam:b0pe       bt deltas -0.00047 +0.00063 -0.00030 +0.00048  mean +0.00009  -
+  -> rel-avito/user-visits: c13_fam:b0
+  rel-event/user-ignore          c13_fam:b0gc       bt deltas +0.00362 +0.00050 +0.00238 +0.00480  mean +0.00282  eligible
+  -> rel-event/user-ignore: c13_fam:b0gc
+  rel-event/user-repeat          c13_fam:b0gc       bt deltas +0.00151 -0.00157 -0.01357 +0.00362  mean -0.00250  -
+  -> rel-event/user-repeat: c13_fam:b0
+  rel-f1/driver-dnf              c13_fam:b0pe       bt deltas -0.00509 +0.00103 -0.00384 +0.00102  mean -0.00172  -
+  -> rel-f1/driver-dnf: c13_fam:b0
+  rel-f1/driver-top3             c13_fam:b0pe       bt deltas -0.00246 +0.02185 -0.00021 +0.00697  mean +0.00654  -
+  -> rel-f1/driver-top3: c13_fam:b0
+  rel-hm/user-churn              c13_fam:b0pe       bt deltas +0.00119 -0.00131 +0.00132 +0.00191  mean +0.00078  -
+  -> rel-hm/user-churn: c13_fam:b0
+  rel-stack/user-badge           c13_fam:b0gc       bt deltas +0.00953 +0.00811 +0.00678 +0.00501  mean +0.00736  eligible
+  -> rel-stack/user-badge: c13_fam:b0gc
+  rel-stack/user-engagement      c13_fam:b0gc       bt deltas +0.00024 -0.00069 -0.00043 -0.00044  mean -0.00033  -
+  -> rel-stack/user-engagement: c13_fam:b0
+  rel-trial/study-outcome        c13_fam:b0pe       bt deltas +0.00562 +0.00074 -0.00264 +0.00384  mean +0.00189  -
+  -> rel-trial/study-outcome: c13_fam:b0
+
+GATE INPUT (val of the chosen configuration vs base; read after the choice)
+  rel-amazon/user-churn          c13_fam:b0pe       base 0.6882 chosen 0.6929  dval s0 +0.00470 s1 +0.00465
+  rel-avito/user-clicks          c13_fam:b0gp       base 0.6526 chosen 0.6832  dval s0 +0.03117 s1 +0.02998
+  rel-avito/user-visits          c13_fam:b0         base 0.7075 chosen 0.7075  dval s0 +0.00000 s1 +0.00000
+  rel-event/user-ignore          c13_fam:b0gc       base 0.8531 chosen 0.8520  dval s0 -0.00376 s1 +0.00168
+  rel-event/user-repeat          c13_fam:b0         base 0.7360 chosen 0.7360  dval s0 +0.00000 s1 +0.00000
+  rel-f1/driver-dnf              c13_fam:b0         base 0.7843 chosen 0.7843  dval s0 +0.00000 s1 +0.00000
+  rel-f1/driver-top3             c13_fam:b0         base 0.8792 chosen 0.8792  dval s0 +0.00000 s1 +0.00000
+  rel-hm/user-churn              c13_fam:b0         base 0.6943 chosen 0.6943  dval s0 +0.00000 s1 +0.00000
+  rel-stack/user-badge           c13_fam:b0gc       base 0.8760 chosen 0.8827  dval s0 +0.00679 s1 +0.00646
+  rel-stack/user-engagement      c13_fam:b0         base 0.9006 chosen 0.9006  dval s0 +0.00000 s1 +0.00000
+  rel-trial/study-outcome        c13_fam:b0         base 0.6935 chosen 0.6935  dval s0 +0.00000 s1 +0.00000
+  12-task mean val gain (tasks not listed = 0): s0 +0.00324  s1 +0.00356

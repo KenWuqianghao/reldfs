@@ -1,0 +1,8 @@
+[bt] c13_fam:b0 rel-hm/user-churn seed=0 val=0.694562 bt1=0.675792 bt1_refit=0.676468 bt2=0.693836 bt2_refit=0.694418
+[bt] c13_fam:b0 rel-hm/user-churn seed=1 val=0.693988 bt1=0.677604 bt1_refit=0.677362 bt2=0.693819 bt2_refit=0.693872
+[bt] c13_fam:b0pe rel-hm/user-churn seed=0 val=0.695456 bt1=0.679501 bt1_refit=0.679034 bt2=0.695637 bt2_refit=0.695291
+[bt] c13_fam:b0pe rel-hm/user-churn seed=1 val=0.695988 bt1=0.680902 bt1_refit=0.679594 bt2=0.695783 bt2_refit=0.695820
+[bt] c13_fam:b1 rel-hm/user-churn seed=0 val=0.709838 bt1=0.689684 bt1_refit=0.690651 bt2=0.709543 bt2_refit=0.709653
+[bt] c13_fam:b1 rel-hm/user-churn seed=1 val=0.710483 bt1=0.691011 bt1_refit=0.691165 bt2=0.710139 bt2_refit=0.710421
+[bt] c13_fam:b1pe rel-hm/user-churn seed=0 val=0.710690 bt1=0.689093 bt1_refit=0.689636 bt2=0.710067 bt2_refit=0.710574
+[bt] c13_fam:b1pe rel-hm/user-churn seed=1 val=0.710915 bt1=0.689662 bt1_refit=0.690550 bt2=0.709852 bt2_refit=0.709818

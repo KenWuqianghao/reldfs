@@ -1,0 +1,6 @@
+[bt] c13_fam:b0 rel-amazon/user-churn seed=0 val=0.688153 bt1=0.673257 bt1_refit=0.675930 bt2=0.686751 bt2_refit=0.687823
+[bt] c13_fam:b0 rel-amazon/user-churn seed=1 val=0.688340 bt1=0.673868 bt1_refit=0.675902 bt2=0.687219 bt2_refit=0.688176
+[bt] c13_fam:b1 rel-amazon/user-churn seed=0 val=0.701439 bt1=0.686962 bt1_refit=0.688309 bt2=0.700768 bt2_refit=0.701329
+[bt] c13_fam:b1 rel-amazon/user-churn seed=1 val=0.701571 bt1=0.687316 bt1_refit=0.688526 bt2=0.700851 bt2_refit=0.701432
+[bt] c13_fam:b1pe rel-amazon/user-churn seed=0 val=0.703838 bt1=0.688565 bt1_refit=0.690019 bt2=0.702933 bt2_refit=0.703810
+[bt] c13_fam:b1pe rel-amazon/user-churn seed=1 val=0.703926 bt1=0.689040 bt1_refit=0.690463 bt2=0.702951 bt2_refit=0.703904

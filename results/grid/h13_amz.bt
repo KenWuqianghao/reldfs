@@ -1,0 +1,4 @@
+[bt] c13_fam:b0 rel-amazon/user-churn seed=0 val=0.688153 bt1=0.673257 bt1_refit=0.675930 bt2=0.686751 bt2_refit=0.687823
+[bt] c13_fam:b0 rel-amazon/user-churn seed=1 val=0.688340 bt1=0.673868 bt1_refit=0.675902 bt2=0.687219 bt2_refit=0.688176
+[bt] c13_fam:b0pe rel-amazon/user-churn seed=0 val=0.692853 bt1=0.678315 bt1_refit=0.680785 bt2=0.691974 bt2_refit=0.692791
+[bt] c13_fam:b0pe rel-amazon/user-churn seed=1 val=0.692986 bt1=0.678350 bt1_refit=0.680553 bt2=0.691820 bt2_refit=0.692811

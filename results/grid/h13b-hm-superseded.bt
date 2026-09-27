@@ -1,0 +1,4 @@
+[bt] c13_fam:b0 rel-hm/user-churn seed=0 val=0.694503 bt1=0.675792 bt1_refit=0.677977 bt2=0.693700 bt2_refit=0.694160
+[bt] c13_fam:b0 rel-hm/user-churn seed=1 val=0.693990 bt1=0.677543 bt1_refit=0.679574 bt2=0.693820 bt2_refit=0.693881
+[bt] c13_fam:b1 rel-hm/user-churn seed=0 val=0.709836 bt1=0.689684 bt1_refit=0.690651 bt2=0.709442 bt2_refit=0.709636
+[bt] c13_fam:b1 rel-hm/user-churn seed=1 val=0.710486 bt1=0.691010 bt1_refit=0.691682 bt2=0.709939 bt2_refit=0.710305

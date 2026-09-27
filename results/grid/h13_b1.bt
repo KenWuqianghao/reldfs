@@ -1,0 +1,16 @@
+[bt] c13_fam:b0 rel-avito/user-visits seed=0 val=0.707214 bt1=0.688901 bt1_refit=0.704389 bt2=0.703549 bt2_refit=0.706930
+[bt] c13_fam:b0 rel-avito/user-visits seed=1 val=0.707830 bt1=0.692189 bt1_refit=0.704599 bt2=0.703116 bt2_refit=0.706058
+[bt] c13_fam:b0gc rel-avito/user-visits seed=0 val=0.707986 bt1=0.689697 bt1_refit=0.705529 bt2=0.699367 bt2_refit=0.707866
+[bt] c13_fam:b0gc rel-avito/user-visits seed=1 val=0.706435 bt1=0.691446 bt1_refit=0.708480 bt2=0.700282 bt2_refit=0.705584
+[bt] c13_fam:b0pe rel-avito/user-visits seed=0 val=0.707175 bt1=0.694201 bt1_refit=0.703923 bt2=0.700760 bt2_refit=0.706627
+[bt] c13_fam:b0pe rel-avito/user-visits seed=1 val=0.706801 bt1=0.691401 bt1_refit=0.705226 bt2=0.701448 bt2_refit=0.706541
+[bt] c13_fam:b0gp rel-avito/user-visits seed=0 val=0.706622 bt1=0.689600 bt1_refit=0.704458 bt2=0.700503 bt2_refit=0.706227
+[bt] c13_fam:b0gp rel-avito/user-visits seed=1 val=0.706297 bt1=0.690640 bt1_refit=0.701450 bt2=0.699576 bt2_refit=0.705582
+[bt] c13_fam:b0 rel-avito/user-clicks seed=0 val=0.650453 bt1=0.637018 bt1_refit=0.663077 bt2=0.636691 bt2_refit=0.645820
+[bt] c13_fam:b0 rel-avito/user-clicks seed=1 val=0.654808 bt1=0.641822 bt1_refit=0.656183 bt2=0.642116 bt2_refit=0.651837
+[bt] c13_fam:b0gc rel-avito/user-clicks seed=0 val=0.675260 bt1=0.648352 bt1_refit=0.675526 bt2=0.667943 bt2_refit=0.670661
+[bt] c13_fam:b0gc rel-avito/user-clicks seed=1 val=0.679348 bt1=0.654982 bt1_refit=0.677185 bt2=0.665040 bt2_refit=0.675032
+[bt] c13_fam:b0pe rel-avito/user-clicks seed=0 val=0.671288 bt1=0.661633 bt1_refit=0.663734 bt2=0.655103 bt2_refit=0.667758
+[bt] c13_fam:b0pe rel-avito/user-clicks seed=1 val=0.666954 bt1=0.661460 bt1_refit=0.663598 bt2=0.651160 bt2_refit=0.654834
+[bt] c13_fam:b0gp rel-avito/user-clicks seed=0 val=0.681623 bt1=0.660357 bt1_refit=0.687212 bt2=0.668424 bt2_refit=0.677656
+[bt] c13_fam:b0gp rel-avito/user-clicks seed=1 val=0.684792 bt1=0.668533 bt1_refit=0.683033 bt2=0.665811 bt2_refit=0.679201

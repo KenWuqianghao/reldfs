@@ -1,0 +1,16 @@
+[bt] c13_fam:b0 rel-f1/driver-dnf seed=0 val=0.782975 bt1=0.837462 bt1_refit=0.841908 bt2=0.779238 bt2_refit=0.779129
+[bt] c13_fam:b0 rel-f1/driver-dnf seed=1 val=0.785723 bt1=0.827984 bt1_refit=0.835308 bt2=0.779492 bt2_refit=0.774830
+[bt] c13_fam:b0pe rel-f1/driver-dnf seed=0 val=0.782757 bt1=0.827200 bt1_refit=0.836816 bt2=0.773515 bt2_refit=0.775293
+[bt] c13_fam:b0pe rel-f1/driver-dnf seed=1 val=0.781905 bt1=0.833369 bt1_refit=0.836336 bt2=0.777361 bt2_refit=0.775846
+[bt] c13_fam:b0 rel-f1/driver-top3 seed=0 val=0.878411 bt1=0.834667 bt1_refit=0.858735 bt2=0.858146 bt2_refit=0.870545
+[bt] c13_fam:b0 rel-f1/driver-top3 seed=1 val=0.879916 bt1=0.837265 bt1_refit=0.838530 bt2=0.854133 bt2_refit=0.868234
+[bt] c13_fam:b0pe rel-f1/driver-top3 seed=0 val=0.886331 bt1=0.857573 bt1_refit=0.856274 bt2=0.855656 bt2_refit=0.870330
+[bt] c13_fam:b0pe rel-f1/driver-top3 seed=1 val=0.880274 bt1=0.848821 bt1_refit=0.860376 bt2=0.874577 bt2_refit=0.875204
+[bt] c13_fam:b0 rel-trial/study-outcome seed=0 val=0.694374 bt1=0.680089 bt1_refit=0.683181 bt2=0.695741 bt2_refit=0.693315
+[bt] c13_fam:b0 rel-trial/study-outcome seed=1 val=0.692592 bt1=0.673579 bt1_refit=0.684767 bt2=0.691819 bt2_refit=0.689201
+[bt] c13_fam:b0pe rel-trial/study-outcome seed=0 val=0.691546 bt1=0.688340 bt1_refit=0.688797 bt2=0.691184 bt2_refit=0.690675
+[bt] c13_fam:b0pe rel-trial/study-outcome seed=1 val=0.696036 bt1=0.686998 bt1_refit=0.685507 bt2=0.691537 bt2_refit=0.693038
+[bt] c13_fam:b0 rel-hm/user-churn seed=0 val=0.694545 bt1=0.675804 bt1_refit=0.677845 bt2=0.693660 bt2_refit=0.693762
+[bt] c13_fam:b0 rel-hm/user-churn seed=1 val=0.693990 bt1=0.677975 bt1_refit=0.679462 bt2=0.693818 bt2_refit=0.693881
+[bt] c13_fam:b0pe rel-hm/user-churn seed=0 val=0.695228 bt1=0.679514 bt1_refit=0.679034 bt2=0.695637 bt2_refit=0.695079
+[bt] c13_fam:b0pe rel-hm/user-churn seed=1 val=0.695988 bt1=0.677733 bt1_refit=0.678155 bt2=0.695581 bt2_refit=0.695786

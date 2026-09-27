@@ -1,0 +1,8 @@
+[bt] c13_fam:b0 rel-stack/user-engagement seed=0 val=0.900620 bt1=0.908331 bt1_refit=0.908346 bt2=0.899864 bt2_refit=0.900415
+[bt] c13_fam:b0 rel-stack/user-engagement seed=1 val=0.900591 bt1=0.907036 bt1_refit=0.908296 bt2=0.899758 bt2_refit=0.900491
+[bt] c13_fam:b0gc rel-stack/user-engagement seed=0 val=0.900137 bt1=0.907801 bt1_refit=0.908585 bt2=0.899504 bt2_refit=0.899980
+[bt] c13_fam:b0gc rel-stack/user-engagement seed=1 val=0.900200 bt1=0.908127 bt1_refit=0.907610 bt2=0.899571 bt2_refit=0.900051
+[bt] c13_fam:b0 rel-stack/user-badge seed=0 val=0.875978 bt1=0.841412 bt1_refit=0.842310 bt2=0.875863 bt2_refit=0.875716
+[bt] c13_fam:b0 rel-stack/user-badge seed=1 val=0.876080 bt1=0.840727 bt1_refit=0.842537 bt2=0.875787 bt2_refit=0.875917
+[bt] c13_fam:b0gc rel-stack/user-badge seed=0 val=0.882765 bt1=0.850055 bt1_refit=0.851841 bt2=0.881938 bt2_refit=0.882495
+[bt] c13_fam:b0gc rel-stack/user-badge seed=1 val=0.882542 bt1=0.849696 bt1_refit=0.850647 bt2=0.881264 bt2_refit=0.880926

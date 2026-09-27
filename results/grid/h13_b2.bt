@@ -1,0 +1,8 @@
+[bt] c13_fam:b0 rel-event/user-repeat seed=0 val=0.735006 bt1=0.717611 bt1_refit=0.734541 bt2=0.729933 bt2_refit=0.726979
+[bt] c13_fam:b0 rel-event/user-repeat seed=1 val=0.736957 bt1=0.710388 bt1_refit=0.726630 bt2=0.731048 bt2_refit=0.725195
+[bt] c13_fam:b0gc rel-event/user-repeat seed=0 val=0.734727 bt1=0.693362 bt1_refit=0.736051 bt2=0.691555 bt2_refit=0.713406
+[bt] c13_fam:b0gc rel-event/user-repeat seed=1 val=0.738573 bt1=0.717305 bt1_refit=0.725063 bt2=0.741918 bt2_refit=0.728818
+[bt] c13_fam:b0 rel-event/user-ignore seed=0 val=0.855079 bt1=0.929974 bt1_refit=0.929948 bt2=0.831876 bt2_refit=0.832506
+[bt] c13_fam:b0 rel-event/user-ignore seed=1 val=0.851081 bt1=0.931148 bt1_refit=0.932038 bt2=0.836530 bt2_refit=0.833116
+[bt] c13_fam:b0gc rel-event/user-ignore seed=0 val=0.851319 bt1=0.933491 bt1_refit=0.933571 bt2=0.830882 bt2_refit=0.834884
+[bt] c13_fam:b0gc rel-event/user-ignore seed=1 val=0.852759 bt1=0.933707 bt1_refit=0.932535 bt2=0.838981 bt2_refit=0.837916
