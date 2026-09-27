@@ -1,0 +1,12 @@
+# Exact versions of the environment that produced every recorded number (Python 3.11).
+# pip install -r harness/requirements.txt .
+duckdb==1.5.5
+huggingface_hub==2.0.0
+lightgbm==4.7.0
+numpy==2.4.6
+pandas==3.0.6
+pyarrow==25.0.1
+PyYAML==6.0.3
+relbench==3.0.1
+scikit-learn==1.9.1
+scipy==1.17.1

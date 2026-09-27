@@ -1,0 +1,763 @@
+[
+ {
+  "name": "Random",
+  "in_context": true,
+  "url": "https://github.com/stanford-star/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-07-23T06:25:37Z",
+  "author": "rishabh-ranjan",
+  "issue": 4,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.5013687207723396,
+     "rel-amazon/item-churn": 0.49922219327753925,
+     "rel-avito/user-visits": 0.5052135823592232,
+     "rel-avito/user-clicks": 0.5042714724628132,
+     "rel-event/user-repeat": 0.5161764705882352,
+     "rel-event/user-ignore": 0.5189872543262755,
+     "rel-f1/driver-dnf": 0.46022544283413847,
+     "rel-f1/driver-top3": 0.5023777173913043,
+     "rel-hm/user-churn": 0.49797742374976833,
+     "rel-stack/user-engagement": 0.5065984152358018,
+     "rel-stack/user-badge": 0.49948798689749824,
+     "rel-trial/study-outcome": 0.4643190100856005
+    },
+    "mean": 0.49801880749837807,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "GNN",
+  "in_context": false,
+  "url": "https://star-project.stanford.edu/relbench/",
+  "note": "RelBench implementation",
+  "date": "2026-08-25T01:23:01Z",
+  "author": "rishabh-ranjan",
+  "issue": 380,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6051869901121383,
+     "rel-amazon/item-churn": 0.8076981211175235,
+     "rel-avito/user-visits": 0.602871576733647,
+     "rel-avito/user-clicks": 0.6656486492205766,
+     "rel-event/user-repeat": 0.6856617647058822,
+     "rel-event/user-ignore": 0.8037718904355634,
+     "rel-f1/driver-dnf": 0.7260674376616405,
+     "rel-f1/driver-top3": 0.6801120923913044,
+     "rel-hm/user-churn": 0.6988562627672481,
+     "rel-stack/user-engagement": 0.9055688751017936,
+     "rel-stack/user-badge": 0.8882570034223118,
+     "rel-trial/study-outcome": 0.6693363844393593
+    },
+    "mean": 0.7282530873424157,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.2485440157282786,
+     "rel-amazon/item-ltv": 0.08510284003281304,
+     "rel-avito/ad-ctr": 0.428941587372302,
+     "rel-event/user-attendance": 0.3259045780397604,
+     "rel-f1/driver-position": 0.5781924738528031,
+     "rel-hm/item-sales": 0.11207731456996685,
+     "rel-stack/post-votes": 0.12761418139213365,
+     "rel-trial/study-adverse": 0.12930230507973253,
+     "rel-trial/site-success": 0.7811991156843695
+    },
+    "mean": 0.31298649019468444,
+    "cov": 1.0
+   },
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.008221787606968074,
+     "rel-amazon/user-item-rate": 0.007905999032603115,
+     "rel-amazon/user-item-review": 0.0044106658104549725,
+     "rel-avito/user-ad-visit": 0.036254438962514304,
+     "rel-f1/driver-circuit-compete": 0.20690231236527537,
+     "rel-hm/user-item-purchase": 0.008164509801871318,
+     "rel-stack/user-post-comment": 0.00039812954097184376,
+     "rel-stack/post-post-related": 0.001151267546616384,
+     "rel-trial/condition-sponsor-run": 0.03500846619639591,
+     "rel-trial/site-sponsor-run": 0.10593774645942615
+    },
+    "mean": 0.041435532332309746,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Entity Mean",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench/",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T01:24:26Z",
+  "author": "rishabh-ranjan",
+  "issue": 381,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6065608446287766,
+     "rel-amazon/item-churn": 0.7437090174224794,
+     "rel-avito/user-visits": 0.6056747347686577,
+     "rel-avito/user-clicks": 0.5557263427724323,
+     "rel-event/user-repeat": 0.7203877005347594,
+     "rel-event/user-ignore": 0.8655245069254948,
+     "rel-f1/driver-dnf": 0.4466549553506075,
+     "rel-f1/driver-top3": 0.7037063649665551,
+     "rel-hm/user-churn": 0.5889538199343244,
+     "rel-stack/user-engagement": 0.7878970843153854,
+     "rel-stack/user-badge": 0.7696866040132384,
+     "rel-trial/study-outcome": 0.5
+    },
+    "mean": 0.6578734979693925,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.33135677754410614,
+     "rel-amazon/item-ltv": 0.13271317933151247,
+     "rel-avito/ad-ctr": 0.4833385436281107,
+     "rel-event/user-attendance": 0.3966743496608349,
+     "rel-f1/driver-position": 1.2100312405289475,
+     "rel-hm/item-sales": 0.22309781080994592,
+     "rel-stack/post-votes": 0.20793543687721652,
+     "rel-trial/study-adverse": 0.17083007461007557,
+     "rel-trial/site-success": 0.9414795279793001
+    },
+    "mean": 0.4552729934411167,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Entity Median",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T03:02:19Z",
+  "author": "rishabh-ranjan",
+  "issue": 383,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6051869901121383,
+     "rel-amazon/item-churn": 0.6853167569560588,
+     "rel-avito/user-visits": 0.602871576733647,
+     "rel-avito/user-clicks": 0.5253106283657961,
+     "rel-event/user-repeat": 0.6856617647058822,
+     "rel-event/user-ignore": 0.7266772592771694,
+     "rel-f1/driver-dnf": 0.42766798418972335,
+     "rel-f1/driver-top3": 0.6203098871237458,
+     "rel-hm/user-churn": 0.5249258303749844,
+     "rel-stack/user-engagement": 0.6486290278887932,
+     "rel-stack/user-badge": 0.5804519795773563,
+     "rel-trial/study-outcome": 0.5
+    },
+    "mean": 0.5944174737754412,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.3029894773214267,
+     "rel-amazon/item-ltv": 0.1124283838892825,
+     "rel-avito/ad-ctr": 0.48328717528825554,
+     "rel-event/user-attendance": 0.3517624017477241,
+     "rel-f1/driver-position": 1.2124724463339913,
+     "rel-hm/item-sales": 0.1575405350848287,
+     "rel-stack/post-votes": 0.13591268440914767,
+     "rel-trial/study-adverse": 0.17083007461007557,
+     "rel-trial/site-success": 0.9270472957053949
+    },
+    "mean": 0.42825227493223633,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Global Mean",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T03:07:25Z",
+  "author": "rishabh-ranjan",
+  "issue": 384,
+  "boards": {
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.3846848929722627,
+     "rel-amazon/item-ltv": 0.1385164466435005,
+     "rel-avito/ad-ctr": 0.5347141683812362,
+     "rel-event/user-attendance": 0.6136081745935585,
+     "rel-f1/driver-position": 0.6423358173653105,
+     "rel-hm/item-sales": 0.2699590765199332,
+     "rel-stack/post-votes": 0.2927805798098862,
+     "rel-trial/study-adverse": 0.21757346589948728,
+     "rel-trial/site-success": 0.9827381653897167
+    },
+    "mean": 0.45299008750832137,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Global Median",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T03:10:42Z",
+  "author": "rishabh-ranjan",
+  "issue": 385,
+  "boards": {
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.2918515308729758,
+     "rel-amazon/item-ltv": 0.10870124648561262,
+     "rel-avito/ad-ctr": 0.45013410941757365,
+     "rel-event/user-attendance": 0.34442011252718346,
+     "rel-f1/driver-position": 0.6261411175411443,
+     "rel-hm/item-sales": 0.15361148606895705,
+     "rel-stack/post-votes": 0.13303310099479038,
+     "rel-trial/study-adverse": 0.16965927540481113,
+     "rel-trial/site-success": 0.9713336052031721
+    },
+    "mean": 0.36098728716846895,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Global Popularity",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T03:12:25Z",
+  "author": "rishabh-ranjan",
+  "issue": 386,
+  "boards": {
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.0024395144913499944,
+     "rel-amazon/user-item-rate": 0.0014802344167351659,
+     "rel-amazon/user-item-review": 0.0011393861262000333,
+     "rel-avito/user-ad-visit": 3.0677110723610766e-05,
+     "rel-f1/driver-circuit-compete": 0.5011904761904762,
+     "rel-hm/user-item-purchase": 0.0030455769442783946,
+     "rel-stack/user-post-comment": 0.00024697280633956096,
+     "rel-stack/post-post-related": 0.014553986341227418,
+     "rel-trial/condition-sponsor-run": 0.025201041160265763,
+     "rel-trial/site-sponsor-run": 0.03745140001309183
+    },
+    "mean": 0.0586779265600688,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Zero",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T03:13:41Z",
+  "author": "rishabh-ranjan",
+  "issue": 387,
+  "boards": {
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.2918515308729758,
+     "rel-amazon/item-ltv": 0.13051803409893026,
+     "rel-avito/ad-ctr": 0.5457004081414014,
+     "rel-event/user-attendance": 0.34442011252718346,
+     "rel-f1/driver-position": 1.6975032510530375,
+     "rel-hm/item-sales": 0.15361148606895705,
+     "rel-stack/post-votes": 0.13303310099479038,
+     "rel-trial/study-adverse": 0.17083007461007554,
+     "rel-trial/site-success": 0.9713336052031721
+    },
+    "mean": 0.4932001781745027,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Majority",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T04:07:32Z",
+  "author": "rishabh-ranjan",
+  "issue": 388,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.5,
+     "rel-amazon/item-churn": 0.5,
+     "rel-avito/user-visits": 0.5,
+     "rel-avito/user-clicks": 0.5,
+     "rel-event/user-repeat": 0.5,
+     "rel-event/user-ignore": 0.5,
+     "rel-f1/driver-dnf": 0.5,
+     "rel-f1/driver-top3": 0.5,
+     "rel-hm/user-churn": 0.5,
+     "rel-stack/user-engagement": 0.5,
+     "rel-stack/user-badge": 0.5,
+     "rel-trial/study-outcome": 0.5
+    },
+    "mean": 0.5,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Past Visit",
+  "in_context": true,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T04:08:13Z",
+  "author": "rishabh-ranjan",
+  "issue": 389,
+  "boards": {
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.0006272245094988528,
+     "rel-amazon/user-item-rate": 0.0007390584371183299,
+     "rel-amazon/user-item-review": 0.00041882190889376054,
+     "rel-avito/user-ad-visit": 0.019254782661556388,
+     "rel-f1/driver-circuit-compete": 0.1839109347442681,
+     "rel-hm/user-item-purchase": 0.008909512329806949,
+     "rel-stack/user-post-comment": 0.013831538627962055,
+     "rel-stack/post-post-related": 0.01744186046511628,
+     "rel-trial/condition-sponsor-run": 0.08295384514381203,
+     "rel-trial/site-sponsor-run": 0.1733932937574886
+    },
+    "mean": 0.05014808725855213,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "LightGBM",
+  "in_context": false,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baseline",
+  "date": "2026-08-25T04:09:15Z",
+  "author": "rishabh-ranjan",
+  "issue": 390,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.5249564459408598,
+     "rel-amazon/item-churn": 0.6259194797502536,
+     "rel-avito/user-visits": 0.531499176862116,
+     "rel-avito/user-clicks": 0.5475904818607333,
+     "rel-event/user-repeat": 0.6892379679144386,
+     "rel-event/user-ignore": 0.7731937872036659,
+     "rel-f1/driver-dnf": 0.7254916312887328,
+     "rel-f1/driver-top3": 0.6492801525919732,
+     "rel-hm/user-churn": 0.5530781217781084,
+     "rel-stack/user-engagement": 0.6274081806635328,
+     "rel-stack/user-badge": 0.630850532867669,
+     "rel-trial/study-outcome": 0.6885450340827916
+    },
+    "mean": 0.6305875827337396,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.2918515308729758,
+     "rel-amazon/item-ltv": 0.10267597295232703,
+     "rel-avito/ad-ctr": 0.42606503139935203,
+     "rel-event/user-attendance": 0.34442011252718346,
+     "rel-f1/driver-position": 0.6018914765578253,
+     "rel-hm/item-sales": 0.15361148606895705,
+     "rel-stack/post-votes": 0.13303310099479038,
+     "rel-trial/study-adverse": 0.129303382193032,
+     "rel-trial/site-success": 0.8800909340511697
+    },
+    "mean": 0.3403270030686236,
+    "cov": 1.0
+   },
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.0013434080421156013,
+     "rel-amazon/user-item-rate": 0.0016812128478757718,
+     "rel-amazon/user-item-review": 0.0012373445503222318,
+     "rel-avito/user-ad-visit": 0.0005707262545788432,
+     "rel-f1/driver-circuit-compete": 0.5955612244897959,
+     "rel-hm/user-item-purchase": 0.0037138165693964293,
+     "rel-stack/user-post-comment": 0.00018762818458967838,
+     "rel-stack/post-post-related": 0.016787442656140156,
+     "rel-trial/condition-sponsor-run": 0.04800440370516128,
+     "rel-trial/site-sponsor-run": 0.09037686683944178
+    },
+    "mean": 0.07594640741394175,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "ID-GNN",
+  "in_context": false,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench baselins",
+  "date": "2026-08-25T04:10:05Z",
+  "author": "rishabh-ranjan",
+  "issue": 391,
+  "boards": {
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.0010032796248991029,
+     "rel-amazon/user-item-rate": 0.0012075416375450113,
+     "rel-amazon/user-item-review": 0.0009068845800567327,
+     "rel-avito/user-ad-visit": 0.036254438962514304,
+     "rel-f1/driver-circuit-compete": 0.6231863609641387,
+     "rel-hm/user-item-purchase": 0.02806401368890473,
+     "rel-stack/user-post-comment": 0.130336330612114,
+     "rel-stack/post-post-related": 0.10747262792512352,
+     "rel-trial/condition-sponsor-run": 0.003319897518235944,
+     "rel-trial/site-sponsor-run": 0.0013654002629684414
+    },
+    "mean": 0.09331167757765005,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "GNN + LightGBM",
+  "in_context": false,
+  "url": "https://star-project.stanford.edu/relbench",
+  "note": "RelBench implementation",
+  "date": "2026-08-25T04:10:42Z",
+  "author": "rishabh-ranjan",
+  "issue": 392,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6833629945948422,
+     "rel-amazon/item-churn": 0.8076981211175235,
+     "rel-avito/user-visits": 0.6616421700554269,
+     "rel-avito/user-clicks": 0.6544548325623745,
+     "rel-event/user-repeat": 0.7661096256684492,
+     "rel-event/user-ignore": 0.7695761804428172,
+     "rel-f1/driver-dnf": 0.7156931635192505,
+     "rel-f1/driver-top3": 0.7247530831939799,
+     "rel-hm/user-churn": 0.6811301832544998,
+     "rel-stack/user-engagement": 0.8893767772241044,
+     "rel-stack/user-badge": 0.8502950524842834,
+     "rel-trial/study-outcome": 0.6627196009347038
+    },
+    "mean": 0.7389009820876878,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.25195945925430885,
+     "rel-amazon/item-ltv": 0.08608570323550703,
+     "rel-avito/ad-ctr": 0.40474589569758995,
+     "rel-event/user-attendance": 0.33055595543284955,
+     "rel-f1/driver-position": 0.5854546006748349,
+     "rel-hm/item-sales": 0.14218339011019898,
+     "rel-stack/post-votes": 0.12737311084036843,
+     "rel-trial/study-adverse": 0.1282452646336671,
+     "rel-trial/site-success": 0.930953240563727
+    },
+    "mean": 0.3319507356047835,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Kapso (Leeroo Team)",
+  "in_context": false,
+  "url": "https://github.com/Leeroo-AI/kapso",
+  "note": null,
+  "date": "2026-08-26T10:05:08Z",
+  "author": "alirezamshi",
+  "issue": 393,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.7155089625654834,
+     "rel-amazon/item-churn": 0.8312954987414322,
+     "rel-avito/user-visits": 0.6777924268662243,
+     "rel-avito/user-clicks": 0.7021014920456261,
+     "rel-event/user-repeat": 0.8115641711229946,
+     "rel-event/user-ignore": 0.888945689843759,
+     "rel-f1/driver-dnf": 0.8327331283853023,
+     "rel-f1/driver-top3": 0.9356579222408027,
+     "rel-hm/user-churn": 0.7162340063583654,
+     "rel-stack/user-engagement": 0.915121468723483,
+     "rel-stack/user-badge": 0.8949043003034881,
+     "rel-trial/study-outcome": 0.8208383277033162
+    },
+    "mean": 0.811891449575023,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.23766044510351428,
+     "rel-amazon/item-ltv": 0.0655004695189943,
+     "rel-avito/ad-ctr": 0.33375212642441626,
+     "rel-event/user-attendance": 0.3157184364832515,
+     "rel-f1/driver-position": 0.3440447462279162,
+     "rel-hm/item-sales": 0.06342959087677044,
+     "rel-stack/post-votes": 0.12213573458527752,
+     "rel-trial/study-adverse": 0.08717506983199792,
+     "rel-trial/site-success": 0.6590770375482983
+    },
+    "mean": 0.24761040628893738,
+    "cov": 1.0
+   },
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.0254400552420944,
+     "rel-amazon/user-item-rate": 0.023107505650886515,
+     "rel-amazon/user-item-review": 0.029500157042940317,
+     "rel-avito/user-ad-visit": 0.042010102143412935,
+     "rel-f1/driver-circuit-compete": 0.8794580918787268,
+     "rel-hm/user-item-purchase": 0.03256021417044058,
+     "rel-stack/user-post-comment": 0.13134517617924238,
+     "rel-stack/post-post-related": 0.21780391765716897,
+     "rel-trial/condition-sponsor-run": 0.12284791671489534,
+     "rel-trial/site-sponsor-run": 0.33334960252607404
+    },
+    "mean": 0.18374227392058823,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "RT-PluRel (in-context)",
+  "in_context": true,
+  "url": "https://huggingface.co/stanford-star/rt-plurel",
+  "note": null,
+  "date": "2026-08-27T23:26:42Z",
+  "author": "rishabh-ranjan",
+  "issue": 396,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6508977189190064,
+     "rel-amazon/item-churn": 0.747674474681665,
+     "rel-avito/user-visits": 0.6202685305369284,
+     "rel-avito/user-clicks": 0.5001483295128547,
+     "rel-event/user-repeat": 0.7777072192513369,
+     "rel-event/user-ignore": 0.8374805706193222,
+     "rel-f1/driver-dnf": 0.8111843068364808,
+     "rel-f1/driver-top3": 0.9029839046822742,
+     "rel-hm/user-churn": 0.6599217647773862,
+     "rel-stack/user-engagement": 0.8799735313652026,
+     "rel-stack/user-badge": 0.8315094370186732,
+     "rel-trial/study-outcome": 0.6733258266439045
+    },
+    "mean": 0.7410896345704194,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.2890554840409213,
+     "rel-amazon/item-ltv": 0.08756836710436032,
+     "rel-avito/ad-ctr": 0.43337922326976447,
+     "rel-event/user-attendance": 0.40807732942234626,
+     "rel-f1/driver-position": 0.4150344641490253,
+     "rel-hm/item-sales": 0.12233156602544813,
+     "rel-stack/post-votes": 0.15742553136205487,
+     "rel-trial/study-adverse": 0.1606361981632742,
+     "rel-trial/site-success": 0.8954767076705705
+    },
+    "mean": 0.3298872079119739,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "RT-PluRel (fine-tuned)",
+  "in_context": false,
+  "url": "https://github.com/stanford-star/relational-transformer",
+  "note": null,
+  "date": "2026-08-27T23:28:07Z",
+  "author": "rishabh-ranjan",
+  "issue": 397,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.712954351157571,
+     "rel-amazon/item-churn": 0.8317557222840535,
+     "rel-avito/user-visits": 0.668415598313101,
+     "rel-avito/user-clicks": 0.6900815683636912,
+     "rel-event/user-repeat": 0.8113302139037433,
+     "rel-event/user-ignore": 0.812441711857967,
+     "rel-f1/driver-dnf": 0.8030937393256234,
+     "rel-f1/driver-top3": 0.9068901546822743,
+     "rel-hm/user-churn": 0.7035717139111293,
+     "rel-stack/user-engagement": 0.9094429685512455,
+     "rel-stack/user-badge": 0.892797509688588,
+     "rel-trial/study-outcome": 0.7318689235165207
+    },
+    "mean": 0.7895536812962923,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.24753402748556413,
+     "rel-amazon/item-ltv": 0.07208564479876356,
+     "rel-avito/ad-ctr": 0.3678491936268976,
+     "rel-event/user-attendance": 0.31815892378337607,
+     "rel-f1/driver-position": 0.38942753171262895,
+     "rel-hm/item-sales": 0.08029538618574142,
+     "rel-stack/post-votes": 0.13398369950243139,
+     "rel-trial/study-adverse": 0.11735820687076186,
+     "rel-trial/site-success": 0.8058357226422823
+    },
+    "mean": 0.28139203740093854,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "RT",
+  "in_context": false,
+  "url": "https://github.com/stanford-star/relational-transformer",
+  "note": null,
+  "date": "2026-08-27T23:29:24Z",
+  "author": "rishabh-ranjan",
+  "issue": 398,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.712984600239051,
+     "rel-amazon/item-churn": 0.829553756282021,
+     "rel-avito/user-visits": 0.6621276150604158,
+     "rel-avito/user-clicks": 0.6859330604093175,
+     "rel-event/user-repeat": 0.7897058823529411,
+     "rel-event/user-ignore": 0.814119258977813,
+     "rel-f1/driver-dnf": 0.7992875616064022,
+     "rel-f1/driver-top3": 0.838426264632107,
+     "rel-hm/user-churn": 0.7023624036461857,
+     "rel-stack/user-engagement": 0.9073917253153062,
+     "rel-stack/user-badge": 0.8933258534411425,
+     "rel-trial/study-outcome": 0.6954766142409163
+    },
+    "mean": 0.7775578830169683,
+    "cov": 1.0
+   },
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.24148120476879137,
+     "rel-amazon/item-ltv": 0.07497072274799504,
+     "rel-avito/ad-ctr": 0.3853302935253623,
+     "rel-event/user-attendance": 0.32516589631592824,
+     "rel-f1/driver-position": 0.48747652454885,
+     "rel-hm/item-sales": 0.07750789256889826,
+     "rel-stack/post-votes": 0.13768042414065634,
+     "rel-trial/study-adverse": 0.12058233128858097,
+     "rel-trial/site-success": 0.783635521074599
+    },
+    "mean": 0.2926478678866291,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "LEDGER",
+  "in_context": false,
+  "url": "https://github.com/ShantanuAnant/ledger",
+  "note": "Event-sequence transformer pretrained on window sufficient statistics; no task labels are used in training, the task enters only at readout.",
+  "date": "2026-09-08T15:05:42Z",
+  "author": "ShantanuAnant",
+  "issue": 400,
+  "boards": {
+   "regression": {
+    "results": {
+     "rel-amazon/user-ltv": 0.26354720194761583,
+     "rel-amazon/item-ltv": 0.09285079395439816,
+     "rel-avito/ad-ctr": 0.3877997719004767,
+     "rel-event/user-attendance": 0.34442011252718346,
+     "rel-f1/driver-position": 0.6556611257925418,
+     "rel-hm/item-sales": 0.15361148606895705,
+     "rel-stack/post-votes": 0.1243152078671801,
+     "rel-trial/study-adverse": 0.15718528343064314,
+     "rel-trial/site-success": 0.8721997654354516
+    },
+    "mean": 0.3390656387693831,
+    "cov": 1.0
+   },
+   "recommendation": {
+    "results": {
+     "rel-amazon/user-item-purchase": 0.011308485134818637,
+     "rel-amazon/user-item-rate": 0.011709765213234778,
+     "rel-amazon/user-item-review": 0.007935345062371956,
+     "rel-avito/user-ad-visit": 0.006841071318459807,
+     "rel-f1/driver-circuit-compete": 0.6053101116990006,
+     "rel-hm/user-item-purchase": 0.0241262806342567,
+     "rel-stack/user-post-comment": 0.02339523792666247,
+     "rel-stack/post-post-related": 0.011062295389004283,
+     "rel-trial/condition-sponsor-run": 0.059767004827642724,
+     "rel-trial/site-sponsor-run": 0.11330710942574385
+    },
+    "mean": 0.08747627066311958,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "Rel-MOSS",
+  "in_context": false,
+  "url": "https://github.com/Esperanto-mega/Rel-MOSS",
+  "note": "Rel-MOSS: Towards Imbalanced Relational Deep Learning on Relational Databases",
+  "date": "2026-09-09T06:19:43Z",
+  "author": "Esperanto-mega",
+  "issue": 401,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6227390057672905,
+     "rel-amazon/item-churn": 0.7557044407562314,
+     "rel-avito/user-visits": 0.6261601571074699,
+     "rel-avito/user-clicks": 0.655804553919079,
+     "rel-event/user-repeat": 0.7080882352941177,
+     "rel-event/user-ignore": 0.8844300139315856,
+     "rel-f1/driver-dnf": 0.7016395842482799,
+     "rel-f1/driver-top3": 0.7962936350334449,
+     "rel-hm/user-churn": 0.6751297842471082,
+     "rel-stack/user-engagement": 0.8854209605317717,
+     "rel-stack/user-badge": 0.8587403034432513,
+     "rel-trial/study-outcome": 0.6705168718898695
+    },
+    "mean": 0.736722295514125,
+    "cov": 1.0
+   }
+  }
+ },
+ {
+  "name": "LEDGER",
+  "in_context": false,
+  "url": "https://github.com/ShantanuAnant/ledger",
+  "note": "In Reference to the previous submission, preds-classification.zip It was an accidental upload. Consider this attached file for the submission.",
+  "date": "2026-09-10T04:34:24Z",
+  "author": "ShantanuAnant",
+  "issue": 403,
+  "boards": {
+   "binary_classification": {
+    "results": {
+     "rel-amazon/user-churn": 0.6662035239826996,
+     "rel-amazon/item-churn": 0.797125592135749,
+     "rel-avito/user-visits": 0.6491323393547679,
+     "rel-avito/user-clicks": 0.656154888382542,
+     "rel-event/user-repeat": 0.7616644385026737,
+     "rel-event/user-ignore": 0.7119109299621199,
+     "rel-f1/driver-dnf": 0.6786610061972381,
+     "rel-f1/driver-top3": 0.7386470526755853,
+     "rel-hm/user-churn": 0.6698712855402607,
+     "rel-stack/user-engagement": 0.8902282767103815,
+     "rel-stack/user-badge": 0.8522924906585329,
+     "rel-trial/study-outcome": 0.6743912922402626
+    },
+    "mean": 0.728856926361901,
+    "cov": 1.0
+   }
+  }
+ }
+]
