@@ -1,0 +1,14 @@
+# local mirrors, caches, predictions and submissions: rebuilt, never committed
+/data/
+/preds/
+/submissions/
+*.zip
+*.parquet
+# Python / build
+__pycache__/
+/.venv/
+.pytest_cache/
+*.egg-info/
+/build/
+/dist/
+*.log
