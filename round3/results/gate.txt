@@ -1,0 +1,8 @@
+rel-amazon/item-churn          base+hlq16                                    base 0.81179 0.81168  chosen 0.81951 0.81968  d s0 +0.00772 s1 +0.00799
+rel-event/user-ignore          base+dom+noid+robust                          base 0.85132 0.85276  chosen 0.85875 0.84937  d s0 +0.00743 s1 -0.00339
+rel-f1/driver-dnf              base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfnk64 base 0.78297 0.78572  chosen 0.79836 0.79359  d s0 +0.01538 s1 +0.00786
+rel-f1/driver-top3             base+domonly+era+noid+robust+pfn              base 0.88420 0.88481  chosen 0.90751 0.91186  d s0 +0.02331 s1 +0.02705
+rel-trial/study-outcome        base+txt|base+txt+robust~base+txt+pfnk64      base 0.69437 0.69259  chosen 0.71515 0.71417  d s0 +0.02078 s1 +0.02158
+seed 0: 12-task val mean gain +0.00622 (need >= +.005); worst task +0.00000 (need > -.01)
+seed 1: 12-task val mean gain +0.00509 (need >= +.005); worst task -0.00339 (need > -.01)
+GATE PASS

@@ -1,0 +1,25 @@
+[guard] {'path': 'customer', 'build_secs': 0.4, 'lc_rows': 2127, 'q_rows': 2081, 'q_cols': 2, 'label_rows': 347, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.1, 'lc_rows': 1026, 'q_rows': 984, 'q_cols': 2, 'label_rows': 297, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2008-07-10 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.5, 'lc_rows': 4076, 'q_rows': 3868, 'q_cols': 2, 'label_rows': 350, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.2, 'lc_rows': 2975, 'q_rows': 2771, 'q_cols': 2, 'label_rows': 300, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2010-07-08 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.5, 'lc_rows': 4441, 'q_rows': 4183, 'q_cols': 2, 'label_rows': 348, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.1, 'lc_rows': 3340, 'q_rows': 3086, 'q_cols': 2, 'label_rows': 298, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2010-10-07 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.5, 'lc_rows': 4821, 'q_rows': 4579, 'q_cols': 2, 'label_rows': 350, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.2, 'lc_rows': 3720, 'q_rows': 3482, 'q_cols': 2, 'label_rows': 300, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2011-07-07 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.6, 'lc_rows': 6048, 'q_rows': 5706, 'q_cols': 2, 'label_rows': 349, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.2, 'lc_rows': 4947, 'q_rows': 4609, 'q_cols': 2, 'label_rows': 299, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2012-01-05 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.6, 'lc_rows': 9051, 'q_rows': 8837, 'q_cols': 2, 'label_rows': 350, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.4, 'lc_rows': 7950, 'q_rows': 7740, 'q_cols': 2, 'label_rows': 300, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2013-07-04 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.7, 'lc_rows': 11705, 'q_rows': 11308, 'q_cols': 2, 'label_rows': 350, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.5, 'lc_rows': 10604, 'q_rows': 10211, 'q_cols': 2, 'label_rows': 300, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2015-01-01 rows=300 feats=31 ok
+[guard] {'path': 'customer', 'build_secs': 0.8, 'lc_rows': 12586, 'q_rows': 12162, 'q_cols': 2, 'label_rows': 300, 'rss_gb': 2.99}
+[guard] {'path': 'customer', 'build_secs': 0.6, 'lc_rows': 12586, 'q_rows': 12162, 'q_cols': 2, 'label_rows': 300, 'rss_gb': 2.99}
+[leakcheck] c16_r3 rel-amazon/item-churn cutoff=2015-10-01 rows=300 feats=31 ok
+[leakcheck] PASS

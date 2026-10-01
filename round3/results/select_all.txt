@@ -1,0 +1,150 @@
+WARNING not reproduced: rel-stack/user-badge base seed=0 bt2_refit 0.882438 vs 0.882437
+WARNING not reproduced: rel-stack/user-engagement base seed=0 val 0.900619 vs 0.900620
+WARNING not reproduced: rel-stack/user-engagement base seed=1 val 0.900591 vs 0.900598
+WARNING not reproduced: rel-stack/user-engagement base seed=1 bt2_refit 0.900491 vs 0.900493
+rel-amazon/item-churn: base R=0.81127 val=0.81174 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+hlq16                   R gain +0.00703 folds +0.0062 +0.0078 wins 2/2 val 0.81959 (+0.00786) ELIGIBLE
+  base+hlq4                    R gain +0.00345 folds +0.0032 +0.0037 wins 2/2 val 0.81545 (+0.00371) -
+  base+hlq8                    R gain +0.00539 folds +0.0048 +0.0059 wins 2/2 val 0.81772 (+0.00598) ELIGIBLE
+  base+robust                  R gain +0.00023 folds +0.0002 +0.0003 wins 2/2 val 0.81200 (+0.00027) -
+  base+winq2                   R gain +0.00338 folds +0.0032 +0.0035 wins 2/2 val 0.81521 (+0.00348) -
+  base+winq4                   R gain +0.00574 folds +0.0052 +0.0063 wins 2/2 val 0.81794 (+0.00621) ELIGIBLE
+  base|base+robust             R gain +0.00023 folds +0.0002 +0.0003 wins 2/2 val 0.81199 (+0.00025) -
+  -> rel-amazon/item-churn: base+hlq16
+
+rel-amazon/user-churn: base R=0.69705 val=0.70388 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+hlq16                   R gain +0.00314 folds +0.0037 +0.0026 wins 2/2 val 0.70678 (+0.00290) -
+  base+hlq4                    R gain +0.00180 folds +0.0019 +0.0017 wins 2/2 val 0.70562 (+0.00174) -
+  base+hlq8                    R gain +0.00295 folds +0.0034 +0.0025 wins 2/2 val 0.70650 (+0.00262) -
+  base+robust                  R gain +0.00034 folds +0.0005 +0.0002 wins 2/2 val 0.70417 (+0.00029) -
+  base+winq2                   R gain +0.00149 folds +0.0017 +0.0013 wins 2/2 val 0.70525 (+0.00137) -
+  base+winq4                   R gain +0.00278 folds +0.0031 +0.0025 wins 2/2 val 0.70650 (+0.00262) -
+  base|base+robust             R gain +0.00034 folds +0.0004 +0.0003 wins 2/2 val 0.70419 (+0.00030) -
+  -> rel-amazon/user-churn: base
+
+rel-avito/user-clicks: base R=0.68346 val=0.68576 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+dom                     R gain -0.00312 folds -0.0041 -0.0021 wins 0/2 val 0.68355 (-0.00221) -
+  base+dom+rate                R gain -0.00223 folds -0.0039 -0.0005 wins 0/2 val 0.68274 (-0.00302) -
+  base+dom+robust              R gain +0.00064 folds -0.0005 +0.0017 wins 1/2 val 0.68490 (-0.00087) -
+  base+hlq4                    R gain -0.00637 folds -0.0096 -0.0031 wins 0/2 val 0.68130 (-0.00447) -
+  base+rate                    R gain -0.00509 folds -0.0058 -0.0044 wins 0/2 val 0.68331 (-0.00245) -
+  base+robust                  R gain -0.00137 folds -0.0036 +0.0008 wins 1/2 val 0.68387 (-0.00189) -
+  base+winq2                   R gain -0.00926 folds -0.0154 -0.0031 wins 0/2 val 0.68494 (-0.00082) -
+  base|base+robust             R gain +0.00119 folds +0.0011 +0.0013 wins 2/2 val 0.68523 (-0.00053) -
+  -> rel-avito/user-clicks: base
+
+rel-avito/user-visits: base R=0.70758 val=0.70917 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+dom                     R gain -0.00071 folds -0.0003 -0.0011 wins 0/2 val 0.70806 (-0.00111) -
+  base+dom+rate                R gain -0.00210 folds -0.0012 -0.0030 wins 0/2 val 0.70626 (-0.00291) -
+  base+dom+robust              R gain -0.00259 folds -0.0043 -0.0009 wins 0/2 val 0.70817 (-0.00099) -
+  base+hlq4                    R gain -0.00194 folds -0.0013 -0.0025 wins 0/2 val 0.70669 (-0.00248) -
+  base+rate                    R gain -0.00226 folds -0.0020 -0.0025 wins 0/2 val 0.70686 (-0.00231) -
+  base+robust                  R gain -0.00113 folds -0.0020 -0.0003 wins 0/2 val 0.70863 (-0.00053) -
+  base+winq2                   R gain -0.00204 folds -0.0020 -0.0021 wins 0/2 val 0.70706 (-0.00211) -
+  base|base+robust             R gain +0.00046 folds +0.0005 +0.0004 wins 2/2 val 0.70943 (+0.00026) -
+  -> rel-avito/user-visits: base
+
+rel-event/user-ignore: base R=0.85625 val=0.85176 folds=['bt1_refit', 'bt2_refit', 'r2_refit', 'r3_refit', 'r4_refit'] seeds=3
+  base+dom                     R gain +0.00220 folds -0.0102 +0.0051 +0.0117 -0.0020 +0.0065 wins 3/5 val 0.84987 (-0.00189) -
+  base+dom+noid                R gain +0.00220 folds -0.0102 +0.0051 +0.0117 -0.0020 +0.0065 wins 3/5 val 0.84987 (-0.00189) -
+  base+dom+noid+robust         R gain +0.00675 folds -0.0057 +0.0131 +0.0127 +0.0072 +0.0064 wins 4/5 val 0.85463 (+0.00287) ELIGIBLE
+  base+dom+noid+robust+hlq4    R gain +0.00473 folds -0.0086 +0.0109 +0.0076 +0.0036 +0.0101 wins 4/5 val 0.84956 (-0.00220) -
+  base+dom+noid+robust+pfn     R gain +0.00189 folds -0.0107 +0.0040 +0.0104 -0.0087 +0.0144 wins 3/5 val 0.83688 (-0.01489) -
+  base+dom+noid+robust+winq2   R gain +0.00779 folds -0.0099 +0.0136 +0.0068 -0.0016 +0.0300 wins 3/5 val 0.85324 (+0.00148) -
+  base+dom+noid+robust~base+dom+noid+robust+pfn R gain +0.00618 folds -0.0054 +0.0100 +0.0132 +0.0042 +0.0089 wins 4/5 val 0.84809 (-0.00368) -
+  base+dom+noid|base+dom+noid+robust R gain +0.00557 folds -0.0073 +0.0128 +0.0125 +0.0037 +0.0062 wins 4/5 val 0.85465 (+0.00289) ELIGIBLE
+  base+noid                    R gain +0.00000 folds +0.0000 +0.0000 +0.0000 +0.0000 +0.0000 wins 0/5 val 0.85176 (+0.00000) -
+  -> rel-event/user-ignore: base+dom+noid+robust
+
+rel-event/user-repeat: base R=0.72407 val=0.73554 folds=['bt1_refit', 'bt2_refit', 'r2_refit', 'r3_refit', 'r4_refit'] seeds=3
+  base+dom                     R gain -0.00153 folds +0.0029 -0.0170 +0.0192 -0.0110 -0.0018 wins 2/5 val 0.73097 (-0.00456) -
+  base+dom+noid                R gain -0.00153 folds +0.0029 -0.0170 +0.0192 -0.0110 -0.0018 wins 2/5 val 0.73097 (-0.00456) -
+  base+dom+noid+robust         R gain +0.00051 folds +0.0068 -0.0219 +0.0199 -0.0157 +0.0136 wins 3/5 val 0.73493 (-0.00060) -
+  base+hlq4                    R gain -0.00381 folds -0.0065 -0.0036 -0.0054 +0.0000 -0.0036 wins 1/5 val 0.72980 (-0.00573) -
+  base+noid                    R gain +0.00000 folds +0.0000 +0.0000 +0.0000 +0.0000 +0.0000 wins 0/5 val 0.73554 (+0.00000) -
+  base+pfn                     R gain +0.01027 folds +0.0209 -0.0155 +0.0259 +0.0062 +0.0139 wins 4/5 val 0.71176 (-0.02377) -
+  base+robust                  R gain -0.00325 folds +0.0022 -0.0044 -0.0113 +0.0007 -0.0034 wins 2/5 val 0.74117 (+0.00564) -
+  base+winq2                   R gain -0.00492 folds -0.0128 -0.0040 -0.0085 -0.0034 +0.0040 wins 1/5 val 0.73564 (+0.00010) -
+  base|base+robust             R gain +0.00344 folds +0.0037 +0.0049 -0.0025 +0.0025 +0.0086 wins 4/5 val 0.74071 (+0.00517) -
+  base~base+pfn                R gain +0.01059 folds +0.0149 -0.0050 +0.0197 +0.0086 +0.0148 wins 4/5 val 0.72879 (-0.00674) -
+  -> rel-event/user-repeat: base
+
+rel-f1/driver-dnf: base R=0.83106 val=0.78653 folds=['bt1_refit', 'bt2_refit', 'r2_refit', 'r3_refit', 'r4_refit'] seeds=3
+  base+dom                     R gain +0.00300 folds -0.0117 -0.0009 +0.0149 +0.0054 +0.0072 wins 3/5 val 0.78109 (-0.00544) -
+  base+dom+noid                R gain +0.00153 folds -0.0171 -0.0024 +0.0173 -0.0004 +0.0102 wins 2/5 val 0.78232 (-0.00421) -
+  base+dom+noid+robust         R gain +0.00375 folds -0.0093 +0.0046 +0.0177 -0.0025 +0.0083 wins 3/5 val 0.78936 (+0.00283) -
+  base+domonly+era+noid+robust R gain +0.00730 folds -0.0068 +0.0092 +0.0194 +0.0039 +0.0109 wins 4/5 val 0.79452 (+0.00799) ELIGIBLE
+  base+domonly+era+noid+robust+pfn R gain +0.00759 folds -0.0108 +0.0154 +0.0176 +0.0067 +0.0091 wins 4/5 val 0.79503 (+0.00850) ELIGIBLE
+  base+domonly+era+noid+robust+pfnk64 R gain +0.00738 folds -0.0133 +0.0141 +0.0173 +0.0088 +0.0100 wins 4/5 val 0.79377 (+0.00724) ELIGIBLE
+  base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfn R gain +0.00921 folds -0.0067 +0.0139 +0.0201 +0.0073 +0.0115 wins 4/5 val 0.79676 (+0.01023) ELIGIBLE
+  base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfnk64 R gain +0.00923 folds -0.0080 +0.0135 +0.0204 +0.0087 +0.0115 wins 4/5 val 0.79608 (+0.00955) ELIGIBLE
+  base+domonly+noid            R gain +0.00396 folds -0.0158 +0.0122 +0.0154 +0.0015 +0.0064 wins 4/5 val 0.79869 (+0.01216) -
+  base+domonly+noid+robust     R gain +0.00448 folds -0.0158 +0.0075 +0.0216 +0.0074 +0.0017 wins 4/5 val 0.79406 (+0.00753) -
+  base+era                     R gain +0.00112 folds -0.0118 +0.0047 +0.0099 -0.0013 +0.0040 wins 3/5 val 0.79667 (+0.01014) -
+  base+hl16y                   R gain -0.00941 folds -0.0077 -0.0096 -0.0184 -0.0082 -0.0032 wins 0/5 val 0.77731 (-0.00922) -
+  base+hl8y                    R gain -0.00704 folds -0.0041 -0.0268 +0.0051 -0.0083 -0.0011 wins 1/5 val 0.76852 (-0.01801) -
+  base+hlq4                    R gain -0.00584 folds -0.0151 -0.0131 +0.0100 -0.0071 -0.0040 wins 1/5 val 0.77503 (-0.01150) -
+  base+noid                    R gain -0.00077 folds -0.0053 +0.0017 -0.0031 -0.0022 +0.0051 wins 2/5 val 0.78537 (-0.00116) -
+  base+pfn                     R gain +0.00601 folds -0.0095 +0.0134 +0.0151 +0.0009 +0.0101 wins 4/5 val 0.79311 (+0.00658) ELIGIBLE
+  base+robust                  R gain +0.00464 folds -0.0028 +0.0015 +0.0150 +0.0049 +0.0047 wins 4/5 val 0.78896 (+0.00243) -
+  base+win15y                  R gain -0.00717 folds -0.0074 -0.0186 +0.0144 -0.0140 -0.0103 wins 1/5 val 0.77590 (-0.01063) -
+  base+win25y                  R gain -0.00280 folds -0.0073 -0.0125 +0.0121 -0.0031 -0.0032 wins 1/5 val 0.78206 (-0.00447) -
+  base+winq2                   R gain -0.00157 folds -0.0083 -0.0025 +0.0054 -0.0042 +0.0019 wins 2/5 val 0.78230 (-0.00423) -
+  base|base+robust             R gain +0.00413 folds -0.0002 +0.0026 +0.0107 +0.0041 +0.0034 wins 4/5 val 0.78906 (+0.00253) -
+  base~base+pfn                R gain +0.00792 folds -0.0012 +0.0128 +0.0140 +0.0047 +0.0094 wins 4/5 val 0.79483 (+0.00830) ELIGIBLE
+  -> rel-f1/driver-dnf: base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfnk64
+
+rel-f1/driver-top3: base R=0.86917 val=0.88474 folds=['bt1_refit', 'bt2_refit', 'r2_refit'] seeds=3
+  base+dom                     R gain +0.01870 folds +0.0121 +0.0396 +0.0043 wins 3/3 val 0.90187 (+0.01713) ELIGIBLE
+  base+dom+noid                R gain +0.01318 folds -0.0054 +0.0357 +0.0092 wins 2/3 val 0.90017 (+0.01543) ELIGIBLE
+  base+dom+noid+robust         R gain +0.02303 folds +0.0148 +0.0428 +0.0115 wins 3/3 val 0.90281 (+0.01807) ELIGIBLE
+  base+domonly+era+noid+robust R gain +0.03145 folds +0.0283 +0.0474 +0.0187 wins 3/3 val 0.90686 (+0.02212) ELIGIBLE
+  base+domonly+era+noid+robust+pfn R gain +0.03701 folds +0.0274 +0.0523 +0.0313 wins 3/3 val 0.90984 (+0.02510) ELIGIBLE
+  base+domonly+era+noid+robust+pfnk64 R gain +0.03533 folds +0.0277 +0.0505 +0.0278 wins 3/3 val 0.90799 (+0.02324) ELIGIBLE
+  base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfn R gain +0.03611 folds +0.0305 +0.0514 +0.0264 wins 3/3 val 0.90976 (+0.02502) ELIGIBLE
+  base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfnk64 R gain +0.03500 folds +0.0307 +0.0500 +0.0243 wins 3/3 val 0.90867 (+0.02393) ELIGIBLE
+  base+domonly+noid            R gain +0.03157 folds +0.0260 +0.0456 +0.0231 wins 3/3 val 0.90573 (+0.02098) ELIGIBLE
+  base+domonly+noid+robust     R gain +0.03408 folds +0.0289 +0.0500 +0.0234 wins 3/3 val 0.90826 (+0.02351) ELIGIBLE
+  base+domonly+noid+robust+hlq4 R gain +0.02502 folds +0.0172 +0.0455 +0.0123 wins 3/3 val 0.90614 (+0.02140) ELIGIBLE
+  base+domonly+noid+robust+pfn R gain +0.03406 folds +0.0292 +0.0457 +0.0273 wins 3/3 val 0.90321 (+0.01847) ELIGIBLE
+  base+domonly+noid+robust+winq2 R gain +0.01335 folds -0.0216 +0.0504 +0.0112 wins 2/3 val 0.90963 (+0.02488) ELIGIBLE
+  base+domonly+noid+robust~base+domonly+noid+robust+pfn R gain +0.03668 folds +0.0335 +0.0490 +0.0275 wins 3/3 val 0.90700 (+0.02225) ELIGIBLE
+  base+domonly+noid|base+domonly+noid+robust R gain +0.03354 folds +0.0279 +0.0494 +0.0233 wins 3/3 val 0.90802 (+0.02328) ELIGIBLE
+  base+noid                    R gain +0.00703 folds -0.0040 +0.0239 +0.0012 wins 2/3 val 0.88817 (+0.00343) ELIGIBLE
+  -> rel-f1/driver-top3: base+domonly+era+noid+robust+pfn
+
+rel-hm/user-churn: base R=0.70043 val=0.71015 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+hlq4                    R gain -0.00106 folds -0.0012 -0.0009 wins 0/2 val 0.70990 (-0.00025) -
+  base+robust                  R gain +0.00008 folds -0.0002 +0.0004 wins 1/2 val 0.71035 (+0.00020) -
+  base+winq2                   R gain -0.00029 folds -0.0001 -0.0005 wins 0/2 val 0.70951 (-0.00064) -
+  base|base+robust             R gain +0.00029 folds +0.0001 +0.0005 wins 2/2 val 0.71044 (+0.00029) -
+  -> rel-hm/user-churn: base
+
+rel-stack/user-badge: base R=0.86794 val=0.88293 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+hlq4                    R gain -0.00180 folds -0.0024 -0.0012 wins 0/2 val 0.88337 (+0.00043) -
+  base+robust                  R gain -0.00147 folds -0.0028 -0.0001 wins 0/2 val 0.88294 (+0.00001) -
+  base+winq2                   R gain +0.00072 folds +0.0006 +0.0008 wins 2/2 val 0.88372 (+0.00079) -
+  base|base+robust             R gain -0.00021 folds -0.0007 +0.0003 wins 1/2 val 0.88319 (+0.00026) -
+  -> rel-stack/user-badge: base
+
+rel-stack/user-engagement: base R=0.90439 val=0.90061 folds=['bt1_refit', 'bt2_refit'] seeds=2
+  base+hlq4                    R gain -0.00025 folds -0.0000 -0.0005 wins 0/2 val 0.90017 (-0.00044) -
+  base+robust                  R gain +0.00031 folds +0.0005 +0.0001 wins 2/2 val 0.90064 (+0.00003) -
+  base+winq2                   R gain -0.00027 folds -0.0003 -0.0002 wins 0/2 val 0.90035 (-0.00026) -
+  base|base+robust             R gain +0.00033 folds +0.0005 +0.0002 wins 2/2 val 0.90075 (+0.00015) -
+  -> rel-stack/user-engagement: base
+
+rel-trial/study-outcome: base R=0.68150 val=0.69390 folds=['bt1_refit', 'bt2_refit', 'r2_refit', 'r3_refit', 'r4_refit'] seeds=3
+  base+robust                  R gain +0.00122 folds -0.0026 +0.0041 -0.0022 +0.0071 -0.0003 wins 2/5 val 0.69820 (+0.00429) -
+  base+txt                     R gain +0.01562 folds +0.0120 +0.0170 +0.0171 +0.0187 +0.0133 wins 5/5 val 0.71164 (+0.01773) ELIGIBLE
+  base+txt+hlq4|base+txt+robust+hlq4 R gain +0.01191 folds +0.0128 +0.0118 +0.0087 +0.0177 +0.0084 wins 5/5 val 0.70646 (+0.01256) ELIGIBLE
+  base+txt+pfn                 R gain +0.01555 folds +0.0092 +0.0159 +0.0180 +0.0160 +0.0187 wins 5/5 val 0.70693 (+0.01302) ELIGIBLE
+  base+txt+pfnk64              R gain +0.01562 folds +0.0117 +0.0131 +0.0192 +0.0182 +0.0159 wins 5/5 val 0.70416 (+0.01026) ELIGIBLE
+  base+txt+robust              R gain +0.01492 folds +0.0162 +0.0127 +0.0124 +0.0204 +0.0129 wins 5/5 val 0.71044 (+0.01654) ELIGIBLE
+  base+txt+winq2|base+txt+robust+winq2 R gain +0.01545 folds +0.0152 +0.0156 +0.0142 +0.0158 +0.0164 wins 5/5 val 0.71198 (+0.01808) ELIGIBLE
+  base+txt|base+txt+robust     R gain +0.01726 folds +0.0157 +0.0168 +0.0162 +0.0210 +0.0166 wins 5/5 val 0.71275 (+0.01884) ELIGIBLE
+  base+txt|base+txt+robust~base+txt+pfn R gain +0.02164 folds +0.0171 +0.0210 +0.0223 +0.0238 +0.0241 wins 5/5 val 0.71508 (+0.02117) ELIGIBLE
+  base+txt|base+txt+robust~base+txt+pfnk64 R gain +0.02170 folds +0.0184 +0.0195 +0.0226 +0.0249 +0.0230 wins 5/5 val 0.71351 (+0.01961) ELIGIBLE
+  base|base+robust             R gain +0.00279 folds +0.0015 +0.0039 +0.0010 +0.0058 +0.0018 wins 5/5 val 0.69778 (+0.00388) -
+  -> rel-trial/study-outcome: base+txt|base+txt+robust~base+txt+pfnk64
+

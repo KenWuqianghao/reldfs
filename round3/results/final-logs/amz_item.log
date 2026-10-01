@@ -1,0 +1,13 @@
+[guard] {'path': 'customer', 'build_secs': 5.6, 'lc_rows': 2587810, 'q_rows': 1233523, 'q_cols': 2, 'label_rows': 248938, 'rss_gb': 3.08}
+[guard] {'path': 'customer', 'build_secs': 9.3, 'lc_rows': 5001863, 'q_rows': 2156470, 'q_cols': 2, 'label_rows': 249534, 'rss_gb': 3.15}
+[guard] {'path': 'customer', 'build_secs': 15.1, 'lc_rows': 8141570, 'q_rows': 3201602, 'q_cols': 2, 'label_rows': 249707, 'rss_gb': 4.06}
+[guard] {'path': 'customer', 'build_secs': 18.5, 'lc_rows': 10699553, 'q_rows': 3627981, 'q_cols': 2, 'label_rows': 249794, 'rss_gb': 4.51}
+[guard] {'path': 'customer', 'build_secs': 14.3, 'lc_rows': 9416934, 'q_rows': 1485164, 'q_cols': 2, 'label_rows': 177546, 'rss_gb': 4.51}
+[guard] {'path': 'customer', 'build_secs': 13.5, 'lc_rows': 9701446, 'q_rows': 1520933, 'q_cols': 2, 'label_rows': 166755, 'rss_gb': 4.51}
+[final2] rel-amazon/item-churn cfg={'halflife_days': None, 'halflife_frac': 0.0625, 'drop_prefix': ('gc.', 'pe.', 'dom.', 'txt.', 'era.', 'rate.')} train (1000000, 31) val (177689, 31) test (166842, 31) 189s rss 4.51
+[final2] rel-amazon/item-churn seed=0 val=0.820465 iters=372 fit 137s rss 4.51
+[final2] rel-amazon/item-churn seed=1 val=0.820429 iters=471 fit 166s rss 4.51
+[final2] rel-amazon/item-churn seed=2 val=0.820485 iters=435 fit 162s rss 4.51
+[final2] rel-amazon/item-churn seed=3 val=0.820418 iters=540 fit 199s rss 4.51
+[final2] rel-amazon/item-churn seed=4 val=0.820408 iters=359 fit 148s rss 4.51
+[final2] rel-amazon/item-churn val seeds 0.820465 0.820429 0.820485 0.820418 0.820408 2-seed-mean 0.820526 5-seed-mean 0.820578 csv final-r3 done 1003s peak rss 4.51

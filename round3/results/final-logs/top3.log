@@ -1,0 +1,9 @@
+[guard] {'path': 'constructors', 'build_secs': 1.4, 'lc_rows': 82944, 'q_rows': 1172, 'q_cols': 76, 'label_rows': 1298, 'rss_gb': 0.42}
+[guard] {'path': 'constructors', 'build_secs': 0.9, 'lc_rows': 51052, 'q_rows': 482, 'q_cols': 76, 'label_rows': 566, 'rss_gb': 0.42}
+[guard] {'path': 'constructors', 'build_secs': 0.9, 'lc_rows': 49444, 'q_rows': 578, 'q_cols': 76, 'label_rows': 521, 'rss_gb': 0.42}
+[final3] rel-f1/driver-top3 seed=0 val=0.907509 (284s)
+[final3] rel-f1/driver-top3 seed=1 val=0.911863 (546s)
+[final3] rel-f1/driver-top3 seed=2 val=0.910161 (812s)
+[final3] rel-f1/driver-top3 seed=3 val=0.910089 (1081s)
+[final3] rel-f1/driver-top3 seed=4 val=0.908996 (1348s)
+[final3] rel-f1/driver-top3 val 2-seed 0.909695 5-seed 0.910018 csv final-r3 done 1348s

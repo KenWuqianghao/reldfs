@@ -1,0 +1,20 @@
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 19239, 'cols': 27, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 19239, 'cols': 18, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 2013, 'cols': 27, 'rss_gb': 2.72}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 2013, 'cols': 18, 'rss_gb': 2.72}
+[rb] rel-event/user-ignore k=1 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=19239 build 42s
+[rb] c16_r3:base rel-event/user-ignore seed=0 val=0.851319 bt1_refit=0.933571 r2_refit=0.918363 r3_refit=0.865249 r4_refit=0.732263 bt2_refit=0.834884 (70s rss 2.72)
+[rb] c16_r3:base rel-event/user-ignore seed=1 val=0.852759 bt1_refit=0.932535 r2_refit=0.913078 r3_refit=0.856804 r4_refit=0.748551 bt2_refit=0.837916 (101s rss 2.72)
+[rb] c16_r3:base rel-event/user-ignore seed=2 val=0.851209 bt1_refit=0.930218 r2_refit=0.915603 r3_refit=0.864672 r4_refit=0.734235 bt2_refit=0.825801 (135s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+hlq4 rel-event/user-ignore seed=0 val=0.847630 bt1_refit=0.922129 r2_refit=0.925435 r3_refit=0.866503 r4_refit=0.745657 bt2_refit=0.844805 (183s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+hlq4 rel-event/user-ignore seed=1 val=0.845131 bt1_refit=0.926702 r2_refit=0.918085 r3_refit=0.866292 r4_refit=0.751008 bt2_refit=0.843894 (222s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+hlq4 rel-event/user-ignore seed=2 val=0.855927 bt1_refit=0.921659 r2_refit=0.926305 r3_refit=0.864698 r4_refit=0.748819 bt2_refit=0.842701 (276s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+winq2 rel-event/user-ignore seed=0 val=0.857197 bt1_refit=0.916255 r2_refit=0.923404 r3_refit=0.857762 r4_refit=0.763978 bt2_refit=0.846024 (303s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+winq2 rel-event/user-ignore seed=1 val=0.845350 bt1_refit=0.925777 r2_refit=0.920657 r3_refit=0.861710 r4_refit=0.764429 bt2_refit=0.843433 (339s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+winq2 rel-event/user-ignore seed=2 val=0.857174 bt1_refit=0.924580 r2_refit=0.923413 r3_refit=0.862499 r4_refit=0.776571 bt2_refit=0.850051 (375s rss 2.72)
+[rb] c16_r3:base+dom+noid+robust+pfn rel-event/user-ignore seed=0 val=0.844422 bt1_refit=0.915084 r2_refit=0.925417 r3_refit=0.852261 r4_refit=0.740822 bt2_refit=0.844422 (3709s rss 3.44)
+[rb] c16_r3:base+dom+noid+robust+pfn rel-event/user-ignore seed=1 val=0.832490 bt1_refit=0.923342 r2_refit=0.926670 r3_refit=0.856779 r4_refit=0.753882 bt2_refit=0.832490 (6958s rss 3.48)
+[rb] c16_r3:base+dom+noid+robust+pfn rel-event/user-ignore seed=2 val=0.833717 bt1_refit=0.925704 r2_refit=0.926154 r3_refit=0.851703 r4_refit=0.763609 bt2_refit=0.833717 (10273s rss 3.48)
+[rb] c16_r3:base+dom+noid+robust~base+dom+noid+robust+pfn rel-event/user-ignore seed=0 val=0.854810 bt1_refit=0.924874 r2_refit=0.929137 r3_refit=0.871183 r4_refit=0.740036 bt2_refit=0.845993 (10307s rss 3.48)
+[rb] c16_r3:base+dom+noid+robust~base+dom+noid+robust+pfn rel-event/user-ignore seed=1 val=0.842159 bt1_refit=0.927205 r2_refit=0.928280 r3_refit=0.866842 r4_refit=0.747450 bt2_refit=0.840495 (10352s rss 3.48)
+[rb] c16_r3:base+dom+noid+robust~base+dom+noid+robust+pfn rel-event/user-ignore seed=2 val=0.847287 bt1_refit=0.927907 r2_refit=0.929299 r3_refit=0.861315 r4_refit=0.754128 bt2_refit=0.842234 (10410s rss 3.48)

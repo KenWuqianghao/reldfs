@@ -1,0 +1,73 @@
+[guard] {'path': 'AdsInfo', 'build_secs': 3.0, 'lc_rows': 1917, 'q_rows': 1563, 'q_cols': 32, 'label_rows': 129, 'rss_gb': 2.18}
+[guard] {'path': 'Category', 'build_secs': 5.5, 'lc_rows': 2808, 'q_rows': 53, 'q_cols': 20, 'label_rows': 98, 'rss_gb': 2.18}
+[guard] {'path': 'Location', 'build_secs': 5.6, 'lc_rows': 2808, 'q_rows': 102, 'q_cols': 20, 'label_rows': 98, 'rss_gb': 2.18}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.6, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.18}
+[guard] {'path': 'AdsInfo', 'build_secs': 0.6, 'lc_rows': 1142, 'q_rows': 955, 'q_cols': 32, 'label_rows': 93, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 0.3, 'lc_rows': 933, 'q_rows': 27, 'q_cols': 20, 'label_rows': 64, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 0.3, 'lc_rows': 933, 'q_rows': 56, 'q_cols': 20, 'label_rows': 64, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.37}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-04-26 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 3.0, 'lc_rows': 5031, 'q_rows': 4067, 'q_cols': 32, 'label_rows': 272, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 7.3, 'lc_rows': 8396, 'q_rows': 63, 'q_cols': 20, 'label_rows': 236, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 6.4, 'lc_rows': 8396, 'q_rows': 187, 'q_cols': 20, 'label_rows': 236, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.5, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.37}
+[guard] {'path': 'AdsInfo', 'build_secs': 1.0, 'lc_rows': 4256, 'q_rows': 3459, 'q_cols': 32, 'label_rows': 236, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 1.5, 'lc_rows': 6521, 'q_rows': 37, 'q_cols': 20, 'label_rows': 202, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 1.2, 'lc_rows': 6521, 'q_rows': 141, 'q_cols': 20, 'label_rows': 202, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.37}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-04-30 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 3.0, 'lc_rows': 5723, 'q_rows': 4347, 'q_cols': 32, 'label_rows': 274, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 8.4, 'lc_rows': 10352, 'q_rows': 64, 'q_cols': 20, 'label_rows': 241, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 5.8, 'lc_rows': 10352, 'q_rows': 223, 'q_cols': 20, 'label_rows': 241, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.3, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.37}
+[guard] {'path': 'AdsInfo', 'build_secs': 1.5, 'lc_rows': 4948, 'q_rows': 3739, 'q_cols': 32, 'label_rows': 238, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 3.0, 'lc_rows': 8477, 'q_rows': 38, 'q_cols': 20, 'label_rows': 207, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 2.4, 'lc_rows': 8477, 'q_rows': 177, 'q_cols': 20, 'label_rows': 207, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.9, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.37}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-05-04 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 2.8, 'lc_rows': 5783, 'q_rows': 4303, 'q_cols': 32, 'label_rows': 250, 'rss_gb': 2.49}
+[guard] {'path': 'Category', 'build_secs': 7.4, 'lc_rows': 10412, 'q_rows': 39, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[guard] {'path': 'Location', 'build_secs': 6.5, 'lc_rows': 10412, 'q_rows': 190, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.2, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.49}
+[guard] {'path': 'AdsInfo', 'build_secs': 2.1, 'lc_rows': 5783, 'q_rows': 4303, 'q_cols': 32, 'label_rows': 250, 'rss_gb': 2.49}
+[guard] {'path': 'Category', 'build_secs': 4.8, 'lc_rows': 10412, 'q_rows': 39, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[guard] {'path': 'Location', 'build_secs': 3.7, 'lc_rows': 10412, 'q_rows': 190, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.0, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.49}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-05-08 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 2.7, 'lc_rows': 2307, 'q_rows': 1793, 'q_cols': 32, 'label_rows': 142, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 7.6, 'lc_rows': 2031, 'q_rows': 62, 'q_cols': 20, 'label_rows': 92, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 4.9, 'lc_rows': 2031, 'q_rows': 93, 'q_cols': 20, 'label_rows': 92, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.6, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.58}
+[guard] {'path': 'AdsInfo', 'build_secs': 0.5, 'lc_rows': 1302, 'q_rows': 1090, 'q_cols': 32, 'label_rows': 100, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 0.3, 'lc_rows': 633, 'q_rows': 30, 'q_cols': 20, 'label_rows': 55, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 0.2, 'lc_rows': 633, 'q_rows': 49, 'q_cols': 20, 'label_rows': 55, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.58}
+[leakcheck] c16_r3 rel-avito/user-visits cutoff=2015-04-26 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 3.0, 'lc_rows': 4879, 'q_rows': 3802, 'q_cols': 32, 'label_rows': 248, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 7.0, 'lc_rows': 5699, 'q_rows': 69, 'q_cols': 20, 'label_rows': 183, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 5.7, 'lc_rows': 5699, 'q_rows': 169, 'q_cols': 20, 'label_rows': 183, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.3, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.58}
+[guard] {'path': 'AdsInfo', 'build_secs': 0.9, 'lc_rows': 3874, 'q_rows': 3099, 'q_cols': 32, 'label_rows': 206, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 1.3, 'lc_rows': 4301, 'q_rows': 37, 'q_cols': 20, 'label_rows': 146, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 1.1, 'lc_rows': 4301, 'q_rows': 125, 'q_cols': 20, 'label_rows': 146, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.58}
+[leakcheck] c16_r3 rel-avito/user-visits cutoff=2015-04-30 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 3.4, 'lc_rows': 6006, 'q_rows': 4473, 'q_cols': 32, 'label_rows': 283, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 7.8, 'lc_rows': 6667, 'q_rows': 68, 'q_cols': 20, 'label_rows': 224, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 5.1, 'lc_rows': 6667, 'q_rows': 211, 'q_cols': 20, 'label_rows': 224, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.0, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.58}
+[guard] {'path': 'AdsInfo', 'build_secs': 1.3, 'lc_rows': 5001, 'q_rows': 3770, 'q_cols': 32, 'label_rows': 241, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 2.4, 'lc_rows': 5269, 'q_rows': 36, 'q_cols': 20, 'label_rows': 187, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 2.1, 'lc_rows': 5269, 'q_rows': 167, 'q_cols': 20, 'label_rows': 187, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.5, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.58}
+[leakcheck] c16_r3 rel-avito/user-visits cutoff=2015-05-04 rows=300 feats=484 ok
+[guard] {'path': 'AdsInfo', 'build_secs': 2.9, 'lc_rows': 5209, 'q_rows': 4010, 'q_cols': 32, 'label_rows': 239, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 6.8, 'lc_rows': 8217, 'q_rows': 38, 'q_cols': 20, 'label_rows': 188, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 5.8, 'lc_rows': 8217, 'q_rows': 155, 'q_cols': 20, 'label_rows': 188, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.7, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.58}
+[guard] {'path': 'AdsInfo', 'build_secs': 2.3, 'lc_rows': 5209, 'q_rows': 4010, 'q_cols': 32, 'label_rows': 239, 'rss_gb': 2.58}
+[guard] {'path': 'Category', 'build_secs': 4.6, 'lc_rows': 8217, 'q_rows': 38, 'q_cols': 20, 'label_rows': 188, 'rss_gb': 2.58}
+[guard] {'path': 'Location', 'build_secs': 3.1, 'lc_rows': 8217, 'q_rows': 155, 'q_cols': 20, 'label_rows': 188, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.9, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.58}
+[leakcheck] c16_r3 rel-avito/user-visits cutoff=2015-05-08 rows=300 feats=484 ok
+[leakcheck] PASS

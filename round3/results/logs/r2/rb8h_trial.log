@@ -1,0 +1,141 @@
+[guard] {'path': 'conditions', 'build_secs': 1.4, 'lc_rows': 22456, 'q_rows': 7618, 'q_cols': 26, 'label_rows': 10884, 'rss_gb': 1.85}
+[guard] {'path': 'facilities', 'build_secs': 3.8, 'lc_rows': 404582, 'q_rows': 148765, 'q_cols': 26, 'label_rows': 10970, 'rss_gb': 1.91}
+[guard] {'path': 'interventions', 'build_secs': 0.7, 'lc_rows': 14498, 'q_rows': 6814, 'q_cols': 26, 'label_rows': 7518, 'rss_gb': 1.91}
+[guard] {'path': 'sponsors', 'build_secs': 0.9, 'lc_rows': 18330, 'q_rows': 7897, 'q_cols': 26, 'label_rows': 11992, 'rss_gb': 1.91}
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+[gchild] {'gchild': 'gc.outcomes.outcome_analyses.outcome_id.', 'build_secs': 0.8, 'q_rows': 11994, 'cols': 129, 'rss_gb': 1.91}
+[guard] {'path': 'conditions', 'build_secs': 0.8, 'lc_rows': 1825, 'q_rows': 638, 'q_cols': 26, 'label_rows': 858, 'rss_gb': 1.91}
+[guard] {'path': 'facilities', 'build_secs': 1.4, 'lc_rows': 38163, 'q_rows': 19273, 'q_cols': 26, 'label_rows': 947, 'rss_gb': 1.91}
+[guard] {'path': 'interventions', 'build_secs': 0.5, 'lc_rows': 854, 'q_rows': 466, 'q_cols': 26, 'label_rows': 447, 'rss_gb': 1.91}
+[guard] {'path': 'sponsors', 'build_secs': 0.6, 'lc_rows': 1584, 'q_rows': 754, 'q_cols': 26, 'label_rows': 960, 'rss_gb': 1.91}
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+candidates/c15_dom/features.py:755: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum"] = ia
+candidates/c15_dom/features.py:756: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".share"] = ia / na.where(na > 0)
+candidates/c15_dom/features.py:757: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  o[p + ".sum_4td"] = ia - f(f"b4_i{j}")
+[gchild] {'gchild': 'gc.outcomes.outcome_analyses.outcome_id.', 'build_secs': 0.4, 'q_rows': 960, 'cols': 129, 'rss_gb': 1.91}
+[rb] rel-trial/study-outcome k=1 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=11994 build 24s
+[rb] c15_dom:base rel-trial/study-outcome seed=0 val=0.694374 bt1_refit=0.683181 r2_refit=0.682009 r3_refit=0.679584 r4_refit=0.672856 bt2_refit=0.693315 (112s rss 1.91)
+[rb] c15_dom:base rel-trial/study-outcome seed=1 val=0.692592 bt1_refit=0.684767 r2_refit=0.682456 r3_refit=0.673042 r4_refit=0.673172 bt2_refit=0.689201 (226s rss 1.91)
+[rb] c15_dom:base rel-trial/study-outcome seed=2 val=0.694745 bt1_refit=0.687592 r2_refit=0.679106 r3_refit=0.682137 r4_refit=0.669399 bt2_refit=0.690697 (343s rss 1.91)
+[rb] c15_dom:base|base+robust rel-trial/study-outcome seed=0 val=0.696822 bt1_refit=0.683223 r2_refit=0.681014 r3_refit=0.683709 r4_refit=0.676959 bt2_refit=0.693892 (527s rss 1.91)
+[rb] c15_dom:base|base+robust rel-trial/study-outcome seed=1 val=0.695491 bt1_refit=0.686496 r2_refit=0.684598 r3_refit=0.682623 r4_refit=0.672103 bt2_refit=0.693163 (752s rss 1.91)
+[rb] c15_dom:base|base+robust rel-trial/study-outcome seed=2 val=0.701040 bt1_refit=0.690407 r2_refit=0.680971 r3_refit=0.685682 r4_refit=0.671829 bt2_refit=0.697734 (959s rss 1.91)

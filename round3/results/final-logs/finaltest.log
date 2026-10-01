@@ -1,0 +1,36 @@
+
+######## r3 (FINAL, chosen by rule)
+Fetching test data:   0%|          | 0/7 [00:00<?, ?dataset/s]Fetching test data:   0%|          | 0/7 [00:00<?, ?dataset/s, rel-amazon]Fetching test data:  14%|█▍        | 1/7 [00:01<00:07,  1.19s/dataset, rel-amazon]Fetching test data:  14%|█▍        | 1/7 [00:01<00:07,  1.19s/dataset, rel-avito] Fetching test data:  29%|██▊       | 2/7 [00:01<00:03,  1.40dataset/s, rel-avito]Fetching test data:  29%|██▊       | 2/7 [00:01<00:03,  1.40dataset/s, rel-event]Fetching test data:  43%|████▎     | 3/7 [00:01<00:01,  2.16dataset/s, rel-event]Fetching test data:  43%|████▎     | 3/7 [00:01<00:01,  2.16dataset/s, rel-f1]   Fetching test data:  57%|█████▋    | 4/7 [00:02<00:01,  2.29dataset/s, rel-f1]Fetching test data:  57%|█████▋    | 4/7 [00:02<00:01,  2.29dataset/s, rel-hm]Fetching test data:  71%|███████▏  | 5/7 [00:02<00:00,  2.43dataset/s, rel-hm]Fetching test data:  71%|███████▏  | 5/7 [00:02<00:00,  2.43dataset/s, rel-stack]Fetching test data:  86%|████████▌ | 6/7 [00:02<00:00,  2.99dataset/s, rel-stack]Fetching test data:  86%|████████▌ | 6/7 [00:02<00:00,  2.99dataset/s, rel-trial]Fetching test data: 100%|██████████| 7/7 [00:02<00:00,  3.57dataset/s, rel-trial]                                                                                 Scoring tasks with 1 worker:   0%|          | 0/12 [00:00<?, ?task/s]Scoring tasks with 1 worker:   0%|          | 0/12 [00:00<?, ?task/s, rel-amazon/item-churn]Scoring tasks with 1 worker:   8%|▊         | 1/12 [00:01<00:12,  1.14s/task, rel-amazon/item-churn]Scoring tasks with 1 worker:   8%|▊         | 1/12 [00:01<00:12,  1.14s/task, rel-amazon/user-churn]Scoring tasks with 1 worker:  17%|█▋        | 2/12 [00:02<00:15,  1.53s/task, rel-amazon/user-churn]Scoring tasks with 1 worker:  17%|█▋        | 2/12 [00:02<00:15,  1.53s/task, rel-avito/user-clicks]Scoring tasks with 1 worker:  25%|██▌       | 3/12 [00:03<00:09,  1.09s/task, rel-avito/user-clicks]Scoring tasks with 1 worker:  25%|██▌       | 3/12 [00:03<00:09,  1.09s/task, rel-avito/user-visits]Scoring tasks with 1 worker:  33%|███▎      | 4/12 [00:04<00:06,  1.16task/s, rel-avito/user-visits]Scoring tasks with 1 worker:  33%|███▎      | 4/12 [00:04<00:06,  1.16task/s, rel-event/user-ignore]Scoring tasks with 1 worker:  42%|████▏     | 5/12 [00:04<00:04,  1.46task/s, rel-event/user-ignore]Scoring tasks with 1 worker:  42%|████▏     | 5/12 [00:04<00:04,  1.46task/s, rel-event/user-repeat]Scoring tasks with 1 worker:  50%|█████     | 6/12 [00:04<00:03,  1.90task/s, rel-event/user-repeat]Scoring tasks with 1 worker:  50%|█████     | 6/12 [00:04<00:03,  1.90task/s, rel-f1/driver-dnf]    Scoring tasks with 1 worker:  58%|█████▊    | 7/12 [00:04<00:02,  2.44task/s, rel-f1/driver-dnf]Scoring tasks with 1 worker:  58%|█████▊    | 7/12 [00:04<00:02,  2.44task/s, rel-f1/driver-top3]Scoring tasks with 1 worker:  67%|██████▋   | 8/12 [00:04<00:01,  2.98task/s, rel-f1/driver-top3]Scoring tasks with 1 worker:  67%|██████▋   | 8/12 [00:04<00:01,  2.98task/s, rel-hm/user-churn] Scoring tasks with 1 worker:  75%|███████▌  | 9/12 [00:05<00:01,  2.43task/s, rel-hm/user-churn]Scoring tasks with 1 worker:  75%|███████▌  | 9/12 [00:05<00:01,  2.43task/s, rel-stack/user-badge]Scoring tasks with 1 worker:  83%|████████▎ | 10/12 [00:06<00:01,  1.40task/s, rel-stack/user-badge]Scoring tasks with 1 worker:  83%|████████▎ | 10/12 [00:06<00:01,  1.40task/s, rel-stack/user-engagement]Scoring tasks with 1 worker:  92%|█████████▏| 11/12 [00:07<00:00,  1.43task/s, rel-stack/user-engagement]Scoring tasks with 1 worker:  92%|█████████▏| 11/12 [00:07<00:00,  1.43task/s, rel-trial/study-outcome]  Scoring tasks with 1 worker: 100%|██████████| 12/12 [00:08<00:00,  1.59task/s, rel-trial/study-outcome]                                                                                                       Classification (AUROC %)
+  ✓ rel-amazon/user-churn              70.75
+  ✓ rel-amazon/item-churn              82.60
+  ✓ rel-avito/user-visits              66.96
+  ✓ rel-avito/user-clicks              65.06
+  ✓ rel-event/user-repeat              80.48
+  ✓ rel-event/user-ignore              86.70
+  ✓ rel-f1/driver-dnf                  70.31
+  ✓ rel-f1/driver-top3                 85.70
+  ✓ rel-hm/user-churn                  70.96
+  ✓ rel-stack/user-engagement          90.58
+  ✓ rel-stack/user-badge               87.49
+  ✓ rel-trial/study-outcome            76.57
+    mean                               77.85
+
+Integrity
+  OK    classification   12/12 tasks valid
+  FAIL  regression       0/9 tasks valid
+        missing: rel-amazon/user-ltv, rel-amazon/item-ltv, rel-avito/ad-ctr,
+        rel-event/user-attendance, rel-f1/driver-position, rel-hm/item-sales,
+        rel-stack/post-votes, rel-trial/study-adverse, rel-trial/site-success
+  FAIL  recommendation   0/10 tasks valid
+        missing: rel-amazon/user-item-purchase, rel-amazon/user-item-rate,
+        rel-amazon/user-item-review, rel-avito/user-ad-visit,
+        rel-f1/driver-circuit-compete, rel-hm/user-item-purchase,
+        rel-stack/user-post-comment, rel-stack/post-post-related,
+        rel-trial/condition-sponsor-run, rel-trial/site-sponsor-run
+
+[test] r3 classification aggregate 0.7784631700075783 complete=True
+Packaging...Next step     
+  Upload these files at https://github.com/stanford-star/relbench/issues/new?template=submit.yml:
+    submissions/reldfs-classification.zip (11.4 MB)
+
+[zip] submissions/reldfs-classification.zip 11363337 bytes (11.36 MB), 12 files: ['rel-amazon__item-churn.csv', 'rel-amazon__user-churn.csv', 'rel-avito__user-clicks.csv', 'rel-avito__user-visits.csv', 'rel-event__user-ignore.csv', 'rel-event__user-repeat.csv', 'rel-f1__driver-dnf.csv', 'rel-f1__driver-top3.csv', 'rel-hm__user-churn.csv', 'rel-stack__user-badge.csv', 'rel-stack__user-engagement.csv', 'rel-trial__study-outcome.csv']

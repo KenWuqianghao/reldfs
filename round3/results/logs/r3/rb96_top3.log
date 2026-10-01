@@ -1,0 +1,13 @@
+[rb] rel-f1/driver-top3 k=14 folds=['bt1', 'r2', 'bt2'] n_train=1353 build 0s
+[rb] c16_r3:base rel-f1/driver-top3 seed=0 val=0.884198 bt1_refit=0.865231 r2_refit=0.894616 bt2_refit=0.875992 (14s rss 0.36)
+[rb] c16_r3:base rel-f1/driver-top3 seed=1 val=0.884808 bt1_refit=0.858598 r2_refit=0.896687 bt2_refit=0.871011 (24s rss 0.36)
+[rb] c16_r3:base rel-f1/driver-top3 seed=2 val=0.885220 bt1_refit=0.844308 r2_refit=0.890474 bt2_refit=0.825590 (33s rss 0.36)
+[rb] c16_r3:base+domonly+era+noid+robust rel-f1/driver-top3 seed=0 val=0.907312 bt1_refit=0.882803 r2_refit=0.912870 bt2_refit=0.905028 (35s rss 0.36)
+[rb] c16_r3:base+domonly+era+noid+robust rel-f1/driver-top3 seed=1 val=0.906076 bt1_refit=0.884650 r2_refit=0.913637 bt2_refit=0.905968 (36s rss 0.36)
+[rb] c16_r3:base+domonly+era+noid+robust rel-f1/driver-top3 seed=2 val=0.907205 bt1_refit=0.885607 r2_refit=0.911259 bt2_refit=0.903711 (37s rss 0.36)
+[rb] c16_r3:base+domonly+era+noid+robust+pfn rel-f1/driver-top3 seed=0 val=0.907509 bt1_refit=0.883145 r2_refit=0.919926 bt2_refit=0.907509 (359s rss 1.51)
+[rb] c16_r3:base+domonly+era+noid+robust+pfn rel-f1/driver-top3 seed=1 val=0.911863 bt1_refit=0.880752 r2_refit=0.928133 bt2_refit=0.911863 (658s rss 1.51)
+[rb] c16_r3:base+domonly+era+noid+robust+pfn rel-f1/driver-top3 seed=2 val=0.910161 bt1_refit=0.886427 r2_refit=0.927673 bt2_refit=0.910161 (960s rss 1.53)
+[rb] c16_r3:base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfn rel-f1/driver-top3 seed=0 val=0.909104 bt1_refit=0.885402 r2_refit=0.918086 bt2_refit=0.907751 (960s rss 1.53)
+[rb] c16_r3:base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfn rel-f1/driver-top3 seed=1 val=0.910403 bt1_refit=0.885504 r2_refit=0.922649 bt2_refit=0.910421 (960s rss 1.53)
+[rb] c16_r3:base+domonly+era+noid+robust~base+domonly+era+noid+robust+pfn rel-f1/driver-top3 seed=2 val=0.909776 bt1_refit=0.888718 r2_refit=0.920195 bt2_refit=0.908764 (960s rss 1.53)

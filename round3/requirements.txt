@@ -1,0 +1,5 @@
+# Round 3 (r3) environment: harness/requirements.txt of the repo root plus TabPFN and CPU torch.
+#   pip install --no-cache-dir -r ../harness/requirements.txt
+#   pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
+torch==2.14.1+cpu
+tabpfn==9.0.0

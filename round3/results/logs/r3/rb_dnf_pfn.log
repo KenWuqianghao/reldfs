@@ -1,0 +1,10 @@
+[rb] rel-f1/driver-dnf k=26 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=11411 build 1s
+[rb] c16_r3:base rel-f1/driver-dnf seed=0 val=0.782975 bt1_refit=0.841908 r2_refit=0.847804 r3_refit=0.822598 r4_refit=0.877682 bt2_refit=0.779129 (53s rss 0.49)
+[rb] c16_r3:base rel-f1/driver-dnf seed=1 val=0.785723 bt1_refit=0.835308 r2_refit=0.847113 r3_refit=0.821222 r4_refit=0.875578 bt2_refit=0.774830 (107s rss 0.49)
+[rb] c16_r3:base rel-f1/driver-dnf seed=2 val=0.790893 bt1_refit=0.841467 r2_refit=0.819650 r3_refit=0.824811 r4_refit=0.871726 bt2_refit=0.785079 (162s rss 0.49)
+[rb] c16_r3:base+pfn rel-f1/driver-dnf seed=0 val=0.791147 bt1_refit=0.829521 r2_refit=0.852103 r3_refit=0.827769 r4_refit=0.887193 bt2_refit=0.791147 (1829s rss 1.92)
+[rb] c16_r3:base+pfn rel-f1/driver-dnf seed=1 val=0.793796 bt1_refit=0.826975 r2_refit=0.862950 r3_refit=0.821555 r4_refit=0.882393 bt2_refit=0.793796 (3472s rss 1.93)
+[rb] c16_r3:base+pfn rel-f1/driver-dnf seed=2 val=0.794395 bt1_refit=0.833575 r2_refit=0.844953 r3_refit=0.822151 r4_refit=0.885593 bt2_refit=0.794395 (5159s rss 1.93)
+[rb] c16_r3:base~base+pfn rel-f1/driver-dnf seed=0 val=0.792671 bt1_refit=0.840302 r2_refit=0.852626 r3_refit=0.828354 r4_refit=0.885208 bt2_refit=0.791683 (5159s rss 1.93)
+[rb] c16_r3:base~base+pfn rel-f1/driver-dnf seed=1 val=0.795147 bt1_refit=0.834329 r2_refit=0.862337 r3_refit=0.826806 r4_refit=0.883919 bt2_refit=0.791029 (5159s rss 1.93)
+[rb] c16_r3:base~base+pfn rel-f1/driver-dnf seed=2 val=0.796662 bt1_refit=0.840380 r2_refit=0.841489 r3_refit=0.827712 r4_refit=0.883993 bt2_refit=0.794612 (5159s rss 1.93)

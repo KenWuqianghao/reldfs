@@ -1,0 +1,37 @@
+[guard] {'path': 'AdsInfo', 'build_secs': 3.3, 'lc_rows': 1917, 'q_rows': 1563, 'q_cols': 32, 'label_rows': 129, 'rss_gb': 2.16}
+[guard] {'path': 'Category', 'build_secs': 6.7, 'lc_rows': 2808, 'q_rows': 53, 'q_cols': 20, 'label_rows': 98, 'rss_gb': 2.16}
+[guard] {'path': 'Location', 'build_secs': 4.9, 'lc_rows': 2808, 'q_rows': 102, 'q_cols': 20, 'label_rows': 98, 'rss_gb': 2.16}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.9, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.16}
+[guard] {'path': 'AdsInfo', 'build_secs': 0.5, 'lc_rows': 1142, 'q_rows': 955, 'q_cols': 32, 'label_rows': 93, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 0.4, 'lc_rows': 933, 'q_rows': 27, 'q_cols': 20, 'label_rows': 64, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 0.3, 'lc_rows': 933, 'q_rows': 56, 'q_cols': 20, 'label_rows': 64, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.37}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-04-26 rows=300 feats=484 LEAK in 38 cols {'dom.': 23, 'rate.': 15}: ['dom.a.srch_1d', 'dom.a.ctx_1d', 'dom.a.clk_1d', 'dom.a.srch_2d', 'dom.a.ctx_2d', 'dom.a.clk_2d']
+[guard] {'path': 'AdsInfo', 'build_secs': 3.1, 'lc_rows': 5031, 'q_rows': 4067, 'q_cols': 32, 'label_rows': 272, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 7.4, 'lc_rows': 8396, 'q_rows': 63, 'q_cols': 20, 'label_rows': 236, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 5.6, 'lc_rows': 8396, 'q_rows': 187, 'q_cols': 20, 'label_rows': 236, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.1, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.37}
+[guard] {'path': 'AdsInfo', 'build_secs': 1.0, 'lc_rows': 4256, 'q_rows': 3459, 'q_cols': 32, 'label_rows': 236, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 1.5, 'lc_rows': 6521, 'q_rows': 37, 'q_cols': 20, 'label_rows': 202, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 1.1, 'lc_rows': 6521, 'q_rows': 141, 'q_cols': 20, 'label_rows': 202, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.37}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-04-30 rows=300 feats=484 LEAK in 38 cols {'dom.': 23, 'rate.': 15}: ['dom.a.srch_1d', 'dom.a.ctx_1d', 'dom.a.clk_1d', 'dom.a.srch_2d', 'dom.a.ctx_2d', 'dom.a.clk_2d']
+[guard] {'path': 'AdsInfo', 'build_secs': 3.5, 'lc_rows': 5723, 'q_rows': 4347, 'q_cols': 32, 'label_rows': 274, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 7.9, 'lc_rows': 10352, 'q_rows': 64, 'q_cols': 20, 'label_rows': 241, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 6.3, 'lc_rows': 10352, 'q_rows': 223, 'q_cols': 20, 'label_rows': 241, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.1, 'q_rows': 350, 'cols': 44, 'rss_gb': 2.37}
+[guard] {'path': 'AdsInfo', 'build_secs': 1.5, 'lc_rows': 4948, 'q_rows': 3739, 'q_cols': 32, 'label_rows': 238, 'rss_gb': 2.37}
+[guard] {'path': 'Category', 'build_secs': 3.2, 'lc_rows': 8477, 'q_rows': 38, 'q_cols': 20, 'label_rows': 207, 'rss_gb': 2.37}
+[guard] {'path': 'Location', 'build_secs': 2.2, 'lc_rows': 8477, 'q_rows': 177, 'q_cols': 20, 'label_rows': 207, 'rss_gb': 2.37}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.9, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.37}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-05-04 rows=300 feats=484 LEAK in 38 cols {'dom.': 23, 'rate.': 15}: ['dom.a.srch_1d', 'dom.a.ctx_1d', 'dom.a.clk_1d', 'dom.a.srch_2d', 'dom.a.ctx_2d', 'dom.a.clk_2d']
+[guard] {'path': 'AdsInfo', 'build_secs': 3.0, 'lc_rows': 5783, 'q_rows': 4303, 'q_cols': 32, 'label_rows': 250, 'rss_gb': 2.49}
+[guard] {'path': 'Category', 'build_secs': 7.8, 'lc_rows': 10412, 'q_rows': 39, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[guard] {'path': 'Location', 'build_secs': 6.9, 'lc_rows': 10412, 'q_rows': 190, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 1.2, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.49}
+[guard] {'path': 'AdsInfo', 'build_secs': 2.1, 'lc_rows': 5783, 'q_rows': 4303, 'q_cols': 32, 'label_rows': 250, 'rss_gb': 2.49}
+[guard] {'path': 'Category', 'build_secs': 3.8, 'lc_rows': 10412, 'q_rows': 39, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[guard] {'path': 'Location', 'build_secs': 3.6, 'lc_rows': 10412, 'q_rows': 190, 'q_cols': 20, 'label_rows': 226, 'rss_gb': 2.49}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 0.7, 'q_rows': 300, 'cols': 44, 'rss_gb': 2.49}
+[leakcheck] c16_r3 rel-avito/user-clicks cutoff=2015-05-08 rows=300 feats=484 LEAK in 38 cols {'dom.': 23, 'rate.': 15}: ['dom.a.srch_1d', 'dom.a.ctx_1d', 'dom.a.clk_1d', 'dom.a.srch_2d', 'dom.a.ctx_2d', 'dom.a.clk_2d']
+[leakcheck] FAIL (4 cutoffs)

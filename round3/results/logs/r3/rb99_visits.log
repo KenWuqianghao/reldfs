@@ -1,0 +1,15 @@
+[guard] {'path': 'AdsInfo', 'build_secs': 20.1, 'lc_rows': 962732, 'q_rows': 713767, 'q_cols': 32, 'label_rows': 52185, 'rss_gb': 2.66}
+[guard] {'path': 'Category', 'build_secs': 9.9, 'lc_rows': 1111564, 'q_rows': 114, 'q_cols': 20, 'label_rows': 37264, 'rss_gb': 2.88}
+[guard] {'path': 'Location', 'build_secs': 7.8, 'lc_rows': 1111564, 'q_rows': 3047, 'q_cols': 20, 'label_rows': 37264, 'rss_gb': 2.88}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 10.4, 'q_rows': 86619, 'cols': 44, 'rss_gb': 4.4}
+[guard] {'path': 'AdsInfo', 'build_secs': 11.9, 'lc_rows': 561105, 'q_rows': 387745, 'q_cols': 32, 'label_rows': 24549, 'rss_gb': 4.45}
+[guard] {'path': 'Category', 'build_secs': 7.9, 'lc_rows': 1003899, 'q_rows': 39, 'q_cols': 20, 'label_rows': 20054, 'rss_gb': 4.45}
+[guard] {'path': 'Location', 'build_secs': 7.7, 'lc_rows': 1003899, 'q_rows': 1425, 'q_cols': 20, 'label_rows': 20054, 'rss_gb': 4.45}
+[gchild] {'gchild': 'gc.SearchInfo.SearchStream.SearchID.', 'build_secs': 8.6, 'q_rows': 29979, 'cols': 44, 'rss_gb': 4.45}
+[rb] rel-avito/user-visits k=1 folds=['bt1', 'bt2'] n_train=86619 build 160s
+[rb] c16_r3:base rel-avito/user-visits seed=0 val=0.709188 bt1_refit=0.707207 bt2_refit=0.708620 (223s rss 4.45)
+[rb] c16_r3:base rel-avito/user-visits seed=1 val=0.709148 bt1_refit=0.706059 bt2_refit=0.708416 (289s rss 4.45)
+[rb] c16_r3:base+rate rel-avito/user-visits seed=0 val=0.707429 bt1_refit=0.705656 bt2_refit=0.706463 (360s rss 4.45)
+[rb] c16_r3:base+rate rel-avito/user-visits seed=1 val=0.706296 bt1_refit=0.703545 bt2_refit=0.705599 (431s rss 4.45)
+[rb] c16_r3:base+dom+rate rel-avito/user-visits seed=0 val=0.706203 bt1_refit=0.703792 bt2_refit=0.705726 (506s rss 4.45)
+[rb] c16_r3:base+dom+rate rel-avito/user-visits seed=1 val=0.706311 bt1_refit=0.707012 bt2_refit=0.705387 (599s rss 4.45)

@@ -1,0 +1,20 @@
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 2927, 'cols': 27, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 2927, 'cols': 18, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 268, 'cols': 27, 'rss_gb': 2.58}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 268, 'cols': 18, 'rss_gb': 2.58}
+[rb] rel-event/user-repeat k=1 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=2927 build 46s
+[rb] c15_dom:base rel-event/user-repeat seed=0 val=0.735006 bt1_refit=0.734541 r2_refit=0.725077 r3_refit=0.673653 r4_refit=0.767396 bt2_refit=0.726979 (55s rss 2.58)
+[rb] c15_dom:base rel-event/user-repeat seed=1 val=0.736957 bt1_refit=0.726630 r2_refit=0.724199 r3_refit=0.679641 r4_refit=0.745183 bt2_refit=0.725195 (63s rss 2.58)
+[rb] c15_dom:base rel-event/user-repeat seed=2 val=0.734643 bt1_refit=0.737178 r2_refit=0.721073 r3_refit=0.666391 r4_refit=0.778432 bt2_refit=0.729543 (71s rss 2.58)
+[rb] c15_dom:base+dom rel-event/user-repeat seed=0 val=0.723244 bt1_refit=0.745968 r2_refit=0.739854 r3_refit=0.674892 r4_refit=0.760943 bt2_refit=0.706104 (80s rss 2.58)
+[rb] c15_dom:base+dom rel-event/user-repeat seed=1 val=0.731048 bt1_refit=0.733509 r2_refit=0.747087 r3_refit=0.669351 r4_refit=0.750561 bt2_refit=0.711148 (90s rss 2.58)
+[rb] c15_dom:base+dom rel-event/user-repeat seed=2 val=0.738629 bt1_refit=0.727700 r2_refit=0.741042 r3_refit=0.642525 r4_refit=0.774130 bt2_refit=0.713378 (98s rss 2.58)
+[rb] c15_dom:base+noid rel-event/user-repeat seed=0 val=0.735006 bt1_refit=0.734541 r2_refit=0.725077 r3_refit=0.673653 r4_refit=0.767396 bt2_refit=0.726979 (107s rss 2.58)
+[rb] c15_dom:base+noid rel-event/user-repeat seed=1 val=0.736957 bt1_refit=0.726630 r2_refit=0.724199 r3_refit=0.679641 r4_refit=0.745183 bt2_refit=0.725195 (114s rss 2.58)
+[rb] c15_dom:base+noid rel-event/user-repeat seed=2 val=0.734643 bt1_refit=0.737178 r2_refit=0.721073 r3_refit=0.666391 r4_refit=0.778432 bt2_refit=0.729543 (122s rss 2.58)
+[rb] c15_dom:base+dom+noid rel-event/user-repeat seed=0 val=0.723244 bt1_refit=0.745968 r2_refit=0.739854 r3_refit=0.674892 r4_refit=0.760943 bt2_refit=0.706104 (131s rss 2.58)
+[rb] c15_dom:base+dom+noid rel-event/user-repeat seed=1 val=0.731048 bt1_refit=0.733509 r2_refit=0.747087 r3_refit=0.669351 r4_refit=0.750561 bt2_refit=0.711148 (140s rss 2.58)
+[rb] c15_dom:base+dom+noid rel-event/user-repeat seed=2 val=0.738629 bt1_refit=0.727700 r2_refit=0.741042 r3_refit=0.642525 r4_refit=0.774130 bt2_refit=0.713378 (148s rss 2.58)
+[rb] c15_dom:base+dom+noid+robust rel-event/user-repeat seed=0 val=0.734392 bt1_refit=0.741611 r2_refit=0.744297 r3_refit=0.657323 r4_refit=0.782174 bt2_refit=0.692029 (155s rss 2.58)
+[rb] c15_dom:base+dom+noid+robust rel-event/user-repeat seed=1 val=0.734448 bt1_refit=0.739624 r2_refit=0.745150 r3_refit=0.652901 r4_refit=0.776515 bt2_refit=0.729041 (165s rss 2.58)
+[rb] c15_dom:base+dom+noid+robust rel-event/user-repeat seed=2 val=0.735953 bt1_refit=0.737446 r2_refit=0.740500 r3_refit=0.662365 r4_refit=0.773008 bt2_refit=0.694816 (173s rss 2.58)

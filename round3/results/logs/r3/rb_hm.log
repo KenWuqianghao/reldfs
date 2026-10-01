@@ -1,0 +1,9 @@
+[guard] {'path': 'article', 'build_secs': 26.5, 'lc_rows': 4429051, 'q_rows': 907373, 'q_cols': 12, 'label_rows': 241445, 'rss_gb': 3.3}
+[guard] {'path': 'article', 'build_secs': 20.0, 'lc_rows': 2537941, 'q_rows': 56271, 'q_cols': 12, 'label_rows': 75360, 'rss_gb': 3.36}
+[rb] rel-hm/user-churn k=1 folds=['bt1', 'bt2'] n_train=250000 build 127s
+[rb] c16_r3:base rel-hm/user-churn seed=0 val=0.709817 bt1_refit=0.690653 bt2_refit=0.709589 (223s rss 3.36)
+[rb] c16_r3:base rel-hm/user-churn seed=1 val=0.710483 bt1_refit=0.691217 bt2_refit=0.710256 (321s rss 3.36)
+[rb] c16_r3:base+hlq4 rel-hm/user-churn seed=0 val=0.709524 bt1_refit=0.690148 bt2_refit=0.708228 (416s rss 3.36)
+[rb] c16_r3:base+hlq4 rel-hm/user-churn seed=1 val=0.710273 bt1_refit=0.689352 bt2_refit=0.709765 (493s rss 3.36)
+[rb] c16_r3:base+winq2 rel-hm/user-churn seed=0 val=0.709578 bt1_refit=0.690461 bt2_refit=0.709491 (545s rss 3.36)
+[rb] c16_r3:base+winq2 rel-hm/user-churn seed=1 val=0.709441 bt1_refit=0.691224 bt2_refit=0.709383 (602s rss 3.36)

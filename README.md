@@ -10,7 +10,42 @@ On the 12 tasks of the RelBench classification board it scores a **test mean AUR
 scored once, locally, with RelBench's own evaluator. On the leaderboard snapshot of 2026-09-24,
 that is above the reference GNN (0.7283) and GNN + LightGBM (0.7389), and below RT (0.7776),
 RT-PluRel fine-tuned (0.7896) and Kapso (0.8119). These are self-reported numbers; see
-"Caveats" below. The entry has not been submitted to the board.
+"Caveats" below. The entry was later submitted as RelBench issue #406, where the board's CI
+scored it at the same .7742.
+
+## The two entries
+
+| entry | what it is | 12-task test mean AUROC | neural? | where |
+|---|---|---|---|---|
+| **v1: reldfs** | time-aware feature synthesis + LightGBM, schema-generic | **0.7742** | **no**: no neural network, no pretrained model | the `reldfs` package (this README) |
+| **v2: reldfs + TabPFN** | v1 on 7 tasks; hand-written features, a text score, recency weights and TabPFN v2 on 5 | **0.7785** | yes: a pretrained tabular foundation model on 3 tasks | [round3/](round3/) |
+
+- v1 is the submitted entry (RelBench issue #406, CI-scored at .7742).
+- v2 was developed after v1's test scores were seen. Its choices were made on validation and
+  train-internal folds only, and its test number comes from one report-only run.
+- v2 is **Built with PriorLabs-TabPFN**. It uses the TabPFN v2 classifier weights
+  (`Prior-Labs/TabPFN-v2-clf`). These are under the Prior Labs License 1.1: Apache-2.0
+  plus an attribution clause that requires the line "Built with PriorLabs-TabPFN". The
+  `tabpfn` package is Apache-2.0. Neither the weights nor the package is redistributed here,
+  and no model is trained on TabPFN outputs. Details:
+  [round3/docs/licensing.md](round3/docs/licensing.md).
+
+## v2 (round 3, "r3"): reldfs + TabPFN on three tasks
+
+[round3/](round3/) holds the v2 system. It was developed on 2026-10-01, after the first
+submission's test scores were seen. It is the round-1 system on 7 tasks, plus changes on 5:
+- hand-written point-in-time features for rel-f1 and rel-event;
+- a point-in-time text score for rel-trial;
+- recency weights for rel-amazon item-churn;
+- **TabPFN v2, a pretrained tabular foundation model (Built with PriorLabs-TabPFN)**, as an
+  extra learner on the two f1 tasks and on trial.
+
+Every choice was made on validation and train-internal folds: 61 task x variant combinations
+were tried in round 3, and none was selected on test. It passed a pre-registered keep gate,
+thinly. Its one report-only test run gave a **12-task mean AUROC of .7785**, against .7742
+for the package below; RT is at .7776. It is **not** non-neural, and it is not part of the
+`reldfs` package. See [round3/README.md](round3/README.md) for the protocol,
+the honesty statement, the logs and the reproduction steps.
 
 ## Install and use
 

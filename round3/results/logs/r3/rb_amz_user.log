@@ -1,0 +1,9 @@
+[guard] {'path': 'product', 'build_secs': 10.5, 'lc_rows': 2198105, 'q_rows': 1104678, 'q_cols': 2, 'label_rows': 249024, 'rss_gb': 3.57}
+[guard] {'path': 'product', 'build_secs': 10.7, 'lc_rows': 5001035, 'q_rows': 362644, 'q_cols': 2, 'label_rows': 409368, 'rss_gb': 3.67}
+[rb] rel-amazon/user-churn k=1 folds=['bt1', 'bt2'] n_train=250000 build 90s
+[rb] c16_r3:base rel-amazon/user-churn seed=0 val=0.703838 bt1_refit=0.690019 bt2_refit=0.703810 (238s rss 3.67)
+[rb] c16_r3:base rel-amazon/user-churn seed=1 val=0.703926 bt1_refit=0.690463 bt2_refit=0.703904 (411s rss 3.67)
+[rb] c16_r3:base+hlq4 rel-amazon/user-churn seed=0 val=0.705536 bt1_refit=0.692660 bt2_refit=0.705422 (549s rss 3.67)
+[rb] c16_r3:base+hlq4 rel-amazon/user-churn seed=1 val=0.705700 bt1_refit=0.691693 bt2_refit=0.705604 (672s rss 3.67)
+[rb] c16_r3:base+winq2 rel-amazon/user-churn seed=0 val=0.705253 bt1_refit=0.691658 bt2_refit=0.705159 (806s rss 3.67)
+[rb] c16_r3:base+winq2 rel-amazon/user-churn seed=1 val=0.705244 bt1_refit=0.692157 bt2_refit=0.705201 (936s rss 3.67)

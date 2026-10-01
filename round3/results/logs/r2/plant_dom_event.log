@@ -1,0 +1,76 @@
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 57, 'cols': 27, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 57, 'cols': 18, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 7, 'cols': 27, 'rss_gb': 2.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 7, 'cols': 18, 'rss_gb': 2.6}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-06-27 rows=7 feats=764 LEAK in 25 cols: ['dom.e.invited_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d', 'dom.e.no_14d', 'dom.e.tot_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 2.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 18, 'rss_gb': 2.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 27, 'rss_gb': 2.62}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 2.62}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-08-29 rows=300 feats=764 LEAK in 39 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 2.62}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 18, 'rss_gb': 2.62}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 2.66}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 2.66}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-09-05 rows=300 feats=764 LEAK in 39 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 2.66}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 18, 'rss_gb': 2.66}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 2.66}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 2.66}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-09-19 rows=300 feats=764 LEAK in 41 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 2.66}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 18, 'rss_gb': 2.66}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 27, 'rss_gb': 2.67}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 2.67}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-09-26 rows=300 feats=764 LEAK in 40 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 2.67}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 18, 'rss_gb': 2.67}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 2.67}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 2.67}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-11-07 rows=300 feats=764 LEAK in 41 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 2.96}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 350, 'cols': 18, 'rss_gb': 2.96}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 2.96}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 2.96}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-11-14 rows=300 feats=764 LEAK in 40 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 3.06}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 18, 'rss_gb': 3.06}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 3.06}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 3.06}
+[leakcheck] c15_dom rel-event/user-ignore cutoff=2012-11-21 rows=300 feats=764 LEAK in 41 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 89, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 89, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 39, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 39, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-07-18 rows=39 feats=764 LEAK in 39 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 143, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 143, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 93, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 93, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-08-22 rows=93 feats=764 LEAK in 39 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 130, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 130, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 80, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 80, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-09-05 rows=80 feats=764 LEAK in 39 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 155, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 155, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 105, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 105, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-09-19 rows=105 feats=764 LEAK in 40 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-11-07 rows=300 feats=764 LEAK in 41 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 350, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 350, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 300, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 300, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-11-14 rows=300 feats=764 LEAK in 40 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 268, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 268, 'cols': 18, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 268, 'cols': 27, 'rss_gb': 3.6}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 268, 'cols': 18, 'rss_gb': 3.6}
+[leakcheck] c15_dom rel-event/user-repeat cutoff=2012-11-21 rows=268 feats=764 LEAK in 41 cols: ['dom.e.invited_7d', 'dom.e.yes_7d', 'dom.e.maybe_7d', 'dom.e.no_7d', 'dom.e.tot_7d', 'dom.e.invited_14d']
+[leakcheck] FAIL (15 cutoffs)

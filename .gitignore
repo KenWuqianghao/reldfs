@@ -12,3 +12,6 @@ __pycache__/
 /build/
 /dist/
 *.log
+
+# round 3: the recorded grid / leakcheck logs are part of the evidence
+!/round3/results/**/*.log

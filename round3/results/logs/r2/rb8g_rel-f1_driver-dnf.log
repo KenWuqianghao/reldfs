@@ -1,0 +1,9 @@
+[guard] {'path': 'constructors', 'build_secs': 2.3, 'lc_rows': 497223, 'q_rows': 10467, 'q_cols': 76, 'label_rows': 10636, 'rss_gb': 0.69}
+[guard] {'path': 'constructors', 'build_secs': 1.0, 'lc_rows': 49272, 'q_rows': 463, 'q_cols': 76, 'label_rows': 546, 'rss_gb': 0.69}
+[rb] rel-f1/driver-dnf k=26 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=11411 build 55s
+[rb] c15_dom:base rel-f1/driver-dnf seed=0 val=0.782975 bt1_refit=0.841908 r2_refit=0.847804 r3_refit=0.822598 r4_refit=0.877682 bt2_refit=0.779129 (113s rss 0.69)
+[rb] c15_dom:base rel-f1/driver-dnf seed=1 val=0.785723 bt1_refit=0.835308 r2_refit=0.847113 r3_refit=0.821222 r4_refit=0.875578 bt2_refit=0.774830 (173s rss 0.69)
+[rb] c15_dom:base rel-f1/driver-dnf seed=2 val=0.790893 bt1_refit=0.841467 r2_refit=0.819650 r3_refit=0.824811 r4_refit=0.871726 bt2_refit=0.785079 (233s rss 0.69)
+[rb] c15_dom:base+robust rel-f1/driver-dnf seed=0 val=0.788635 bt1_refit=0.838353 r2_refit=0.855711 r3_refit=0.824226 r4_refit=0.884526 bt2_refit=0.784508 (283s rss 0.69)
+[rb] c15_dom:base+robust rel-f1/driver-dnf seed=1 val=0.790113 bt1_refit=0.833301 r2_refit=0.854887 r3_refit=0.831186 r4_refit=0.877563 bt2_refit=0.775764 (337s rss 0.69)
+[rb] c15_dom:base+robust rel-f1/driver-dnf seed=2 val=0.788136 bt1_refit=0.838549 r2_refit=0.848940 r3_refit=0.827849 r4_refit=0.876882 bt2_refit=0.783202 (392s rss 0.69)

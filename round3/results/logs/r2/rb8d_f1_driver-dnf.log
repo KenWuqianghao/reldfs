@@ -1,0 +1,12 @@
+[guard] {'path': 'constructors', 'build_secs': 3.0, 'lc_rows': 497223, 'q_rows': 10467, 'q_cols': 76, 'label_rows': 10636, 'rss_gb': 0.68}
+[guard] {'path': 'constructors', 'build_secs': 0.9, 'lc_rows': 49272, 'q_rows': 463, 'q_cols': 76, 'label_rows': 546, 'rss_gb': 0.68}
+[rb] rel-f1/driver-dnf k=26 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=11411 build 54s
+[rb] c15_dom:base rel-f1/driver-dnf seed=0 val=0.782975 bt1_refit=0.841908 r2_refit=0.847804 r3_refit=0.822598 r4_refit=0.877682 bt2_refit=0.779129 (112s rss 0.68)
+[rb] c15_dom:base rel-f1/driver-dnf seed=1 val=0.785723 bt1_refit=0.835308 r2_refit=0.847113 r3_refit=0.821222 r4_refit=0.875578 bt2_refit=0.774830 (171s rss 0.68)
+[rb] c15_dom:base rel-f1/driver-dnf seed=2 val=0.790893 bt1_refit=0.841467 r2_refit=0.819650 r3_refit=0.824811 r4_refit=0.871726 bt2_refit=0.785079 (231s rss 0.68)
+[rb] c15_dom:base+domonly+noid rel-f1/driver-dnf seed=0 val=0.795175 bt1_refit=0.827847 r2_refit=0.851501 r3_refit=0.822942 r4_refit=0.879237 bt2_refit=0.787283 (236s rss 0.68)
+[rb] c15_dom:base+domonly+noid rel-f1/driver-dnf seed=1 val=0.798422 bt1_refit=0.816165 r2_refit=0.859219 r3_refit=0.827975 r4_refit=0.886778 bt2_refit=0.793351 (242s rss 0.68)
+[rb] c15_dom:base+domonly+noid rel-f1/driver-dnf seed=2 val=0.802467 bt1_refit=0.827406 r2_refit=0.850187 r3_refit=0.822082 r4_refit=0.878304 bt2_refit=0.794966 (248s rss 0.68)
+[rb] c15_dom:base+domonly+noid+robust rel-f1/driver-dnf seed=0 val=0.791075 bt1_refit=0.824752 r2_refit=0.861368 r3_refit=0.828847 r4_refit=0.871385 bt2_refit=0.783256 (252s rss 0.68)
+[rb] c15_dom:base+domonly+noid+robust rel-f1/driver-dnf seed=1 val=0.796880 bt1_refit=0.831254 r2_refit=0.858072 r3_refit=0.832172 r4_refit=0.874318 bt2_refit=0.794721 (260s rss 0.68)
+[rb] c15_dom:base+domonly+noid+robust rel-f1/driver-dnf seed=2 val=0.794213 bt1_refit=0.815420 r2_refit=0.859854 r3_refit=0.829844 r4_refit=0.884349 bt2_refit=0.783565 (267s rss 0.68)

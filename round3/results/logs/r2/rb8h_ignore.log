@@ -1,0 +1,11 @@
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.3, 'q_rows': 19239, 'cols': 27, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 19239, 'cols': 18, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.1, 'q_rows': 2013, 'cols': 27, 'rss_gb': 2.71}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.1, 'q_rows': 2013, 'cols': 18, 'rss_gb': 2.71}
+[rb] rel-event/user-ignore k=1 folds=['bt1', 'r2', 'r3', 'r4', 'bt2'] n_train=19239 build 45s
+[rb] c15_dom:base rel-event/user-ignore seed=0 val=0.851319 bt1_refit=0.933571 r2_refit=0.918363 r3_refit=0.865249 r4_refit=0.732263 bt2_refit=0.834884 (76s rss 2.71)
+[rb] c15_dom:base rel-event/user-ignore seed=1 val=0.852759 bt1_refit=0.932535 r2_refit=0.913078 r3_refit=0.856804 r4_refit=0.748551 bt2_refit=0.837916 (112s rss 2.71)
+[rb] c15_dom:base rel-event/user-ignore seed=2 val=0.851209 bt1_refit=0.930218 r2_refit=0.915603 r3_refit=0.864672 r4_refit=0.734235 bt2_refit=0.825801 (150s rss 2.71)
+[rb] c15_dom:base+dom+noid|base+dom+noid+robust rel-event/user-ignore seed=0 val=0.857878 bt1_refit=0.926472 r2_refit=0.929046 r3_refit=0.863927 r4_refit=0.743375 bt2_refit=0.843230 (221s rss 2.71)
+[rb] c15_dom:base+dom+noid|base+dom+noid+robust rel-event/user-ignore seed=1 val=0.851868 bt1_refit=0.924962 r2_refit=0.925412 r3_refit=0.869423 r4_refit=0.747584 bt2_refit=0.846532 (306s rss 2.71)
+[rb] c15_dom:base+dom+noid|base+dom+noid+robust rel-event/user-ignore seed=2 val=0.854210 bt1_refit=0.922967 r2_refit=0.929982 r3_refit=0.864467 r4_refit=0.742759 bt2_refit=0.847178 (400s rss 2.71)

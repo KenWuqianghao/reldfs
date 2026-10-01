@@ -1,0 +1,19 @@
+[gchild] {'gchild': 'gc.posts.votes.PostId.', 'build_secs': 3.7, 'q_rows': 250000, 'cols': 30, 'rss_gb': 2.17}
+[gchild] {'gchild': 'gc.posts.comments.PostId.', 'build_secs': 1.5, 'q_rows': 250000, 'cols': 15, 'rss_gb': 2.17}
+[gchild] {'gchild': 'gc.posts.posts.ParentId.', 'build_secs': 2.1, 'q_rows': 250000, 'cols': 36, 'rss_gb': 2.17}
+[gchild] {'gchild': 'gc.posts.postLinks.PostId.', 'build_secs': 0.7, 'q_rows': 250000, 'cols': 13, 'rss_gb': 2.17}
+[gchild] {'gchild': 'gc.posts.postLinks.RelatedPostId.', 'build_secs': 0.7, 'q_rows': 250000, 'cols': 13, 'rss_gb': 2.17}
+[gchild] {'gchild': 'gc.posts.postHistory.PostId.', 'build_secs': 2.4, 'q_rows': 250000, 'cols': 22, 'rss_gb': 2.27}
+[gchild] {'gchild': 'gc.posts.votes.PostId.', 'build_secs': 2.3, 'q_rows': 85838, 'cols': 30, 'rss_gb': 2.32}
+[gchild] {'gchild': 'gc.posts.comments.PostId.', 'build_secs': 1.1, 'q_rows': 85838, 'cols': 15, 'rss_gb': 2.32}
+[gchild] {'gchild': 'gc.posts.posts.ParentId.', 'build_secs': 0.8, 'q_rows': 85838, 'cols': 36, 'rss_gb': 2.32}
+[gchild] {'gchild': 'gc.posts.postLinks.PostId.', 'build_secs': 0.3, 'q_rows': 85838, 'cols': 13, 'rss_gb': 2.32}
+[gchild] {'gchild': 'gc.posts.postLinks.RelatedPostId.', 'build_secs': 0.4, 'q_rows': 85838, 'cols': 13, 'rss_gb': 2.32}
+[gchild] {'gchild': 'gc.posts.postHistory.PostId.', 'build_secs': 2.0, 'q_rows': 85838, 'cols': 22, 'rss_gb': 2.32}
+[rb] rel-stack/user-engagement k=1 folds=['bt1', 'bt2'] n_train=250000 build 38s
+[rb] c16_r3:base rel-stack/user-engagement seed=0 val=0.900620 bt1_refit=0.908346 bt2_refit=0.900415 (121s rss 2.32)
+[rb] c16_r3:base rel-stack/user-engagement seed=1 val=0.900598 bt1_refit=0.908296 bt2_refit=0.900493 (189s rss 2.32)
+[rb] c16_r3:base+hlq4 rel-stack/user-engagement seed=0 val=0.900563 bt1_refit=0.908318 bt2_refit=0.900324 (234s rss 2.32)
+[rb] c16_r3:base+hlq4 rel-stack/user-engagement seed=1 val=0.899768 bt1_refit=0.908249 bt2_refit=0.899670 (284s rss 2.32)
+[rb] c16_r3:base+winq2 rel-stack/user-engagement seed=0 val=0.900505 bt1_refit=0.907761 bt2_refit=0.900321 (349s rss 2.32)
+[rb] c16_r3:base+winq2 rel-stack/user-engagement seed=1 val=0.900187 bt1_refit=0.908294 bt2_refit=0.900103 (407s rss 2.32)

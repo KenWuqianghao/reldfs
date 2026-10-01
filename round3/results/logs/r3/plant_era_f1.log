@@ -1,0 +1,49 @@
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 2000, 'q_rows': 35, 'q_cols': 76, 'label_rows': 52, 'rss_gb': 0.37}
+[guard] {'path': 'constructors', 'build_secs': 0.3, 'lc_rows': 220, 'q_rows': 16, 'q_cols': 76, 'label_rows': 32, 'rss_gb': 0.37}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=1952-09-06 rows=35 feats=467 LEAK in 49 cols {'dom.': 27, 'era.': 22}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 2634, 'q_rows': 48, 'q_cols': 76, 'label_rows': 50, 'rss_gb': 0.37}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 854, 'q_rows': 29, 'q_cols': 76, 'label_rows': 30, 'rss_gb': 0.37}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=1972-07-23 rows=31 feats=467 LEAK in 51 cols {'dom.': 29, 'era.': 22}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 4053, 'q_rows': 54, 'q_cols': 76, 'label_rows': 54, 'rss_gb': 0.37}
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 2273, 'q_rows': 35, 'q_cols': 76, 'label_rows': 34, 'rss_gb': 0.37}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=1991-05-15 rows=34 feats=467 LEAK in 50 cols {'dom.': 28, 'era.': 22}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 2943, 'q_rows': 36, 'q_cols': 76, 'label_rows': 42, 'rss_gb': 0.38}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1163, 'q_rows': 17, 'q_cols': 76, 'label_rows': 22, 'rss_gb': 0.38}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=1998-04-08 rows=22 feats=467 LEAK in 67 cols {'dom.': 44, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 3530, 'q_rows': 37, 'q_cols': 76, 'label_rows': 42, 'rss_gb': 0.38}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1750, 'q_rows': 18, 'q_cols': 76, 'label_rows': 22, 'rss_gb': 0.38}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=2003-09-09 rows=22 feats=467 LEAK in 67 cols {'dom.': 44, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 3331, 'q_rows': 33, 'q_cols': 76, 'label_rows': 41, 'rss_gb': 0.38}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1551, 'q_rows': 14, 'q_cols': 76, 'label_rows': 21, 'rss_gb': 0.38}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=2004-06-05 rows=22 feats=467 LEAK in 68 cols {'dom.': 45, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 3618, 'q_rows': 40, 'q_cols': 76, 'label_rows': 42, 'rss_gb': 0.38}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1838, 'q_rows': 21, 'q_cols': 76, 'label_rows': 22, 'rss_gb': 0.38}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=2007-04-21 rows=22 feats=467 LEAK in 66 cols {'dom.': 43, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1780, 'q_rows': 19, 'q_cols': 76, 'label_rows': 20, 'rss_gb': 0.38}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1780, 'q_rows': 19, 'q_cols': 76, 'label_rows': 20, 'rss_gb': 0.38}
+[leakcheck] c16_r3 rel-f1/driver-dnf cutoff=2008-03-16 rows=22 feats=467 LEAK in 67 cols {'dom.': 44, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 3472, 'q_rows': 48, 'q_cols': 76, 'label_rows': 51, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1692, 'q_rows': 29, 'q_cols': 76, 'label_rows': 31, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=1994-04-29 rows=32 feats=467 LEAK in 66 cols {'dom.': 43, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.7, 'lc_rows': 3007, 'q_rows': 47, 'q_cols': 76, 'label_rows': 44, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 1227, 'q_rows': 28, 'q_cols': 76, 'label_rows': 24, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=1995-06-23 rows=25 feats=467 LEAK in 68 cols {'dom.': 45, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 2943, 'q_rows': 36, 'q_cols': 76, 'label_rows': 42, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1163, 'q_rows': 17, 'q_cols': 76, 'label_rows': 22, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=1998-04-08 rows=22 feats=467 LEAK in 67 cols {'dom.': 44, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 3248, 'q_rows': 35, 'q_cols': 76, 'label_rows': 36, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 1468, 'q_rows': 16, 'q_cols': 76, 'label_rows': 16, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=2003-02-11 rows=20 feats=467 LEAK in 68 cols {'dom.': 45, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 3388, 'q_rows': 37, 'q_cols': 76, 'label_rows': 40, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 1608, 'q_rows': 18, 'q_cols': 76, 'label_rows': 20, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=2003-06-11 rows=20 feats=467 LEAK in 66 cols {'dom.': 43, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 3237, 'q_rows': 33, 'q_cols': 76, 'label_rows': 40, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.4, 'lc_rows': 1457, 'q_rows': 14, 'q_cols': 76, 'label_rows': 20, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=2004-05-06 rows=20 feats=467 LEAK in 66 cols {'dom.': 43, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 3807, 'q_rows': 40, 'q_cols': 76, 'label_rows': 42, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.6, 'lc_rows': 2027, 'q_rows': 21, 'q_cols': 76, 'label_rows': 22, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=2006-09-23 rows=22 feats=467 LEAK in 67 cols {'dom.': 44, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 1780, 'q_rows': 19, 'q_cols': 76, 'label_rows': 20, 'rss_gb': 0.39}
+[guard] {'path': 'constructors', 'build_secs': 0.5, 'lc_rows': 1780, 'q_rows': 19, 'q_cols': 76, 'label_rows': 20, 'rss_gb': 0.39}
+[leakcheck] c16_r3 rel-f1/driver-top3 cutoff=2008-03-16 rows=22 feats=467 LEAK in 67 cols {'dom.': 44, 'era.': 23}: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']
+[leakcheck] FAIL (16 cutoffs)

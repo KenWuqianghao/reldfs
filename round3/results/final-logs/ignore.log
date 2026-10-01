@@ -1,0 +1,12 @@
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 19239, 'cols': 27, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 19239, 'cols': 18, 'rss_gb': 2.34}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 2013, 'cols': 27, 'rss_gb': 2.73}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 2013, 'cols': 18, 'rss_gb': 2.73}
+[gchild] {'gchild': 'gc.events.event_interest.event.', 'build_secs': 0.2, 'q_rows': 1958, 'cols': 27, 'rss_gb': 2.73}
+[gchild] {'gchild': 'gc.events.event_attendees.event.', 'build_secs': 0.2, 'q_rows': 1958, 'cols': 18, 'rss_gb': 2.73}
+[final3] rel-event/user-ignore seed=0 val=0.858752 (61s)
+[final3] rel-event/user-ignore seed=1 val=0.849366 (68s)
+[final3] rel-event/user-ignore seed=2 val=0.855768 (74s)
+[final3] rel-event/user-ignore seed=3 val=0.855726 (79s)
+[final3] rel-event/user-ignore seed=4 val=0.849225 (88s)
+[final3] rel-event/user-ignore val 2-seed 0.851929 5-seed 0.852116 csv final-r3 done 88s

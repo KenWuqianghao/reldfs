@@ -1,0 +1,19 @@
+[gchild] {'gchild': 'gc.posts.votes.PostId.', 'build_secs': 4.0, 'q_rows': 250000, 'cols': 30, 'rss_gb': 2.11}
+[gchild] {'gchild': 'gc.posts.comments.PostId.', 'build_secs': 1.7, 'q_rows': 250000, 'cols': 15, 'rss_gb': 2.11}
+[gchild] {'gchild': 'gc.posts.posts.ParentId.', 'build_secs': 2.4, 'q_rows': 250000, 'cols': 36, 'rss_gb': 2.11}
+[gchild] {'gchild': 'gc.posts.postLinks.PostId.', 'build_secs': 0.8, 'q_rows': 250000, 'cols': 13, 'rss_gb': 2.11}
+[gchild] {'gchild': 'gc.posts.postLinks.RelatedPostId.', 'build_secs': 0.7, 'q_rows': 250000, 'cols': 13, 'rss_gb': 2.11}
+[gchild] {'gchild': 'gc.posts.postHistory.PostId.', 'build_secs': 2.9, 'q_rows': 250000, 'cols': 22, 'rss_gb': 2.18}
+[gchild] {'gchild': 'gc.posts.votes.PostId.', 'build_secs': 3.3, 'q_rows': 247398, 'cols': 30, 'rss_gb': 2.59}
+[gchild] {'gchild': 'gc.posts.comments.PostId.', 'build_secs': 1.8, 'q_rows': 247398, 'cols': 15, 'rss_gb': 2.59}
+[gchild] {'gchild': 'gc.posts.posts.ParentId.', 'build_secs': 3.2, 'q_rows': 247398, 'cols': 36, 'rss_gb': 2.59}
+[gchild] {'gchild': 'gc.posts.postLinks.PostId.', 'build_secs': 0.8, 'q_rows': 247398, 'cols': 13, 'rss_gb': 2.59}
+[gchild] {'gchild': 'gc.posts.postLinks.RelatedPostId.', 'build_secs': 0.8, 'q_rows': 247398, 'cols': 13, 'rss_gb': 2.59}
+[gchild] {'gchild': 'gc.posts.postHistory.PostId.', 'build_secs': 2.6, 'q_rows': 247398, 'cols': 22, 'rss_gb': 2.59}
+[rb] rel-stack/user-badge k=1 folds=['bt1', 'bt2'] n_train=250000 build 40s
+[rb] c15_dom:base rel-stack/user-badge seed=0 val=0.882856 bt1_refit=0.854439 bt2_refit=0.882438 (251s rss 2.63)
+[rb] c15_dom:base rel-stack/user-badge seed=1 val=0.883008 bt1_refit=0.852552 bt2_refit=0.882333 (428s rss 2.63)
+[rb] c15_dom:base+robust rel-stack/user-badge seed=0 val=0.882897 bt1_refit=0.849910 bt2_refit=0.882609 (770s rss 2.63)
+[rb] c15_dom:base+robust rel-stack/user-badge seed=1 val=0.882985 bt1_refit=0.851435 bt2_refit=0.881928 (1237s rss 2.63)
+[rb] c15_dom:base|base+robust rel-stack/user-badge seed=0 val=0.883124 bt1_refit=0.853275 bt2_refit=0.882863 (1799s rss 2.63)
+[rb] c15_dom:base|base+robust rel-stack/user-badge seed=1 val=0.883251 bt1_refit=0.852250 bt2_refit=0.882527 (2455s rss 2.63)

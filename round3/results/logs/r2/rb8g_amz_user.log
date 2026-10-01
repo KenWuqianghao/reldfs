@@ -1,0 +1,9 @@
+[guard] {'path': 'product', 'build_secs': 10.4, 'lc_rows': 2198105, 'q_rows': 1104678, 'q_cols': 2, 'label_rows': 249024, 'rss_gb': 3.59}
+[guard] {'path': 'product', 'build_secs': 11.1, 'lc_rows': 5001035, 'q_rows': 362644, 'q_cols': 2, 'label_rows': 409368, 'rss_gb': 3.68}
+[rb] rel-amazon/user-churn k=1 folds=['bt1', 'bt2'] n_train=250000 build 90s
+[rb] c15_dom:base rel-amazon/user-churn seed=0 val=0.703838 bt1_refit=0.690019 bt2_refit=0.703810 (230s rss 3.68)
+[rb] c15_dom:base rel-amazon/user-churn seed=1 val=0.703926 bt1_refit=0.690463 bt2_refit=0.703904 (378s rss 3.68)
+[rb] c15_dom:base+robust rel-amazon/user-churn seed=0 val=0.704158 bt1_refit=0.690912 bt2_refit=0.703960 (654s rss 3.68)
+[rb] c15_dom:base+robust rel-amazon/user-churn seed=1 val=0.704186 bt1_refit=0.690613 bt2_refit=0.704066 (900s rss 3.68)
+[rb] c15_dom:base|base+robust rel-amazon/user-churn seed=0 val=0.704146 bt1_refit=0.690612 bt2_refit=0.704081 (1312s rss 3.68)
+[rb] c15_dom:base|base+robust rel-amazon/user-churn seed=1 val=0.704224 bt1_refit=0.690709 bt2_refit=0.704144 (1704s rss 3.68)
