@@ -90,6 +90,73 @@ CI runs. Both columns are AUROC.
   11,363,337 bytes, sha1 `0c4efda7d54af5e1ffd20588d11a4727bafb1849`. It has not been
   submitted.
 
+## v3: rel-f1 with the full database
+
+Added on 2026-11-10, after the round-3 test numbers above were seen. The models and the
+per-task choices are unchanged. Only the two rel-f1 prediction files differ from round 3.
+
+**The change.** The rel-f1 test rows have 29-30 seed times, from 2010-03 to 2013-03. The
+default `task.get_db()` ends at the test timestamp, 2010-01-01, so round 3 built every f1
+test feature from rows up to 3 years older than the row's seed time. Validation rows never
+had that problem: their seed times (2005-03 to 2008-03) lie inside the default database.
+The leaderboard rules allow `get_db(upto_test_timestamp=False)` and say it affects only
+rel-f1. `harness/fulldb.py` builds the f1 test features from that full database.
+
+**How rule 1 is kept** (no information at or after the prediction time):
+- Every feature query filters `time < seed time` per label row. This is the same code that
+  round 3 used; only the database passed to it for test rows is larger.
+- The category vocabulary (the "plan") still comes from the default database.
+- `make fulldb-leakcheck` builds the features of test-era seed times twice: from the full
+  database, and from the database with every row at or after the seed time removed. The
+  two must be identical in all 467 columns. They are, on both tasks.
+- The same check with a planted leak (`RELDFS_PLANT_DOM=1`, which moves the filter 30 days
+  forward) fails on every seed time, as it must.
+- The models are fit on the hosted train and validation tables only. No label is rebuilt
+  from rows after the test timestamp.
+- Test labels were not used for any choice. Test was scored once, after the 12 files were
+  hashed.
+
+**Validation measurements** (AUROC, seeds 0 / 1, LightGBM on the compact f1 matrix `D`):
+
+| arm | what it is | driver-dnf | driver-top3 |
+|---|---|---|---|
+| stale | val features from the database cut at the validation timestamp (the regime of round 3's test files) | .5689 / .5856 | .7046 / .6952 |
+| static | features cut at each row's own seed time (round 3's validation protocol) | .7980 / .7921 | .9073 / .9061 |
+| roll | one model per seed time, fit on every label row whose window ended before it | .7982 / .7928 | .9023 / .9034 |
+| static + dense seeds | extra label rows at seeds shifted back by 10 and 20 days | .8010 / .7980 | .9075 / .9049 |
+
+- The stale arm shows what the old test regime cost: about .2 AUROC on validation.
+- `roll` and dense seeds were written down before their numbers, with the keep rule of
+  round 3 (mean gain over the two tasks of at least .005 on each seed). Both failed it
+  (-.0024 / -.0010 and +.0016 / +.0024) and are not used.
+
+**Final files.** Round 3's variants, static arm, refit on train + validation, 5 seeds
+(TabPFN: 5 seeds on top3, seeds 0-1 on dnf for compute reasons). Validation of the pooled
+prediction: dnf .7944 (round 3: .7950), top3 .9098 (round 3: .9100).
+
+**Test** (one report-only run with `relbench.submit.evaluate_submission`):
+
+| task | test, r3 | **test, v3** |
+|---|---|---|
+| rel-f1/driver-dnf | .7031 | **.8344** |
+| rel-f1/driver-top3 | .8570 | **.9279** |
+| 10 other tasks | (same CSVs) | (same CSVs) |
+| **12-task mean** | .7785 | **.7953** |
+
+- On the board of 2026-11-10 this is between Kapso (.8119) and KumoRelational (.7926).
+- The f1 test sets have 702 and 726 rows. The standard error of an AUROC there is about
+  .02, so a 12-task margin of .003 does not separate neighbouring entries.
+- The 12 files were hashed before the run (sha1 of their concatenation in file-name order:
+  `3c23fa786e44`; per file: [results/final-r5.sha256.tsv](results/final-r5.sha256.tsv)).
+  The zip holds 12 CSVs, 11,363,425 bytes, sha1 `0d2803ff4bad5b519f60c14850114eabad9c9a68`.
+- Logs: [results/logs/r5/](results/logs/r5/).
+
+```sh
+make fulldb-leakcheck           # test-era leak check of both f1 tasks (add RELDFS_PLANT_DOM=1: must fail)
+make fulldb-val                 # the stale / static / roll validation arms
+make fulldb-final               # preds/r5-static-final/ (the two f1 files)
+```
+
 ## Reproduce
 
 ```sh

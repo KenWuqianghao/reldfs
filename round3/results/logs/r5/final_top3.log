@@ -1,0 +1,9 @@
+[r5] rel-f1/driver-top3 train=1353 val=588 gap=303 ext=726 test=726 feats=467 (1s)
+[r5] rel-f1/driver-top3 seed=0 stale=0.6956 static=0.9071 (1s)
+[r5] rel-f1/driver-top3 seed=1 stale=0.6910 static=0.9115 (1s)
+[r5] rel-f1/driver-top3 seed=2 stale=0.6827 static=0.9102 (1s)
+[r5] rel-f1/driver-top3 seed=3 stale=0.6971 static=0.9097 (1s)
+[r5] rel-f1/driver-top3 seed=4 stale=0.7067 static=0.9089 (1s)
+[r5] rel-f1/driver-top3 stale: val pooled over 5 seeds = 0.6984
+[r5] rel-f1/driver-top3 static: val pooled over 5 seeds = 0.9098
+[r5] rel-f1/driver-top3 test CSVs written under preds/r5-<arm>-relog/ (not scored)

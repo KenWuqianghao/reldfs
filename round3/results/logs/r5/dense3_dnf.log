@@ -1,0 +1,7 @@
+[guard] {'path': 'constructors', 'build_secs': 30.3, 'lc_rows': 895263, 'q_rows': 18689, 'q_cols': 76, 'label_rows': 18937, 'rss_gb': 0.93}
+[guard] {'path': 'constructors', 'build_secs': 7.2, 'lc_rows': 92335, 'q_rows': 864, 'q_cols': 76, 'label_rows': 1028, 'rss_gb': 0.93}
+[r5] rel-f1/driver-dnf train=11411 val=566 gap=303 ext=702 test=702 feats=467 (1707s)
+[r5] rel-f1/driver-dnf seed=0 stale=0.6158 static=0.8010 (1728s)
+[r5] rel-f1/driver-dnf seed=1 stale=0.6035 static=0.7980 (1738s)
+[r5] rel-f1/driver-dnf stale: val pooled over 2 seeds = 0.6093
+[r5] rel-f1/driver-dnf static: val pooled over 2 seeds = 0.8003

@@ -8,7 +8,7 @@ export TABPFN_MODEL_CACHE_DIR ?= $(or $(RELDFS_DATA),data)/tabpfn
 D = base+domonly+era+noid+robust
 CHANGED = rel-f1/driver-top3 rel-f1/driver-dnf rel-trial/study-outcome rel-event/user-ignore rel-amazon/item-churn
 
-.PHONY: text select gate leakcheck final copy-unchanged hashes zip
+.PHONY: text select gate leakcheck final copy-unchanged hashes zip fulldb-leakcheck fulldb-val fulldb-final
 
 text:               ## rel-trial registration text for the point-in-time text score (~85 MB)
 	$(RUN) harness/fetch_trial_text.py
@@ -42,3 +42,14 @@ hashes:             ## compare preds/final-r3/ with results/final-r3.sha256.tsv
 
 zip:                ## submissions/reldfs-classification.zip from preds/final-r3/ (no scoring)
 	$(PY) harness/finaltest.py --final r3 --package-only
+
+# v3: rel-f1 test features from get_db(upto_test_timestamp=False), cut per row at time < seed
+fulldb-leakcheck:   ## features at test-era seeds: full db == db truncated before the seed
+	for t in driver-dnf driver-top3; do $(RUN) harness/fulldb.py --task rel-f1/$$t --variant base --leakcheck || exit 1; done
+
+fulldb-val:         ## validation arms stale / static / roll, LightGBM on D, seeds 0 and 1
+	for t in driver-dnf driver-top3; do $(RUN) harness/fulldb.py --task rel-f1/$$t --variant "$(D)" --seeds 0,1 || exit 1; done
+
+fulldb-final:       ## the two f1 files of v3 -> preds/r5-static-final/ (static arm, refit on train+val)
+	$(RUN) harness/fulldb.py --task rel-f1/driver-dnf --variant "$(D)~$(D)+pfnk64" --seeds 0,1,2,3,4 --pfn-seeds 0,1 --no-roll --write-test --tag=-final
+	$(RUN) harness/fulldb.py --task rel-f1/driver-top3 --variant "$(D)+pfn" --seeds 0,1,2,3,4 --no-roll --write-test --tag=-final

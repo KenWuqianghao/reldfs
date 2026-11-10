@@ -1,0 +1,7 @@
+[r5] rel-f1/driver-dnf train=11411 val=566 gap=303 ext=702 test=702 feats=467 (42s)
+[r5] rel-f1/driver-dnf seed=0 stale=0.5689 static=0.7980 roll=0.7982 (186s)
+[r5] rel-f1/driver-dnf seed=1 stale=0.5856 static=0.7921 roll=0.7928 (352s)
+[r5] rel-f1/driver-dnf stale: val pooled over 2 seeds = 0.5828
+[r5] rel-f1/driver-dnf static: val pooled over 2 seeds = 0.7938
+[r5] rel-f1/driver-dnf roll: val pooled over 2 seeds = 0.7952
+[r5] rel-f1/driver-dnf test CSVs written under preds/r5-<arm>-lgb/ (not scored)

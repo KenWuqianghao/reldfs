@@ -1,0 +1,26 @@
+[guard] {'path': 'constructors', 'build_secs': 29.2, 'lc_rows': 497223, 'q_rows': 10467, 'q_cols': 76, 'label_rows': 10636, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 14.9, 'lc_rows': 49272, 'q_rows': 463, 'q_cols': 76, 'label_rows': 546, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 6.8, 'lc_rows': 37665, 'q_rows': 343, 'q_cols': 76, 'label_rows': 394, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 10.7, 'lc_rows': 28112, 'q_rows': 295, 'q_cols': 76, 'label_rows': 299, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 12.7, 'lc_rows': 63067, 'q_rows': 706, 'q_cols': 76, 'label_rows': 685, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 15.5, 'lc_rows': 63067, 'q_rows': 706, 'q_cols': 76, 'label_rows': 685, 'rss_gb': 0.72}
+[r5] rel-f1/driver-dnf train=11411 val=566 gap=303 ext=702 test=702 feats=467 (1243s)
+[guard] {'path': 'constructors', 'build_secs': 12.2, 'lc_rows': 3585, 'q_rows': 45, 'q_cols': 76, 'label_rows': 41, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 1.5, 'lc_rows': 1927, 'q_rows': 25, 'q_cols': 76, 'label_rows': 24, 'rss_gb': 0.72}
+[leak5] rel-f1/driver-dnf seed=2010-05-01 rows=24 feats=467 LEAK in 66 cols: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']; rebuilt labels usable at this seed: 24 rows ok
+[guard] {'path': 'constructors', 'build_secs': 7.9, 'lc_rows': 4100, 'q_rows': 45, 'q_cols': 76, 'label_rows': 42, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 11.3, 'lc_rows': 2442, 'q_rows': 25, 'q_cols': 76, 'label_rows': 25, 'rss_gb': 0.72}
+[leak5] rel-f1/driver-dnf seed=2011-05-26 rows=25 feats=467 LEAK in 66 cols: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']; rebuilt labels usable at this seed: 243 rows ok
+[guard] {'path': 'constructors', 'build_secs': 6.7, 'lc_rows': 4105, 'q_rows': 44, 'q_cols': 76, 'label_rows': 41, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 11.0, 'lc_rows': 2447, 'q_rows': 24, 'q_cols': 76, 'label_rows': 24, 'rss_gb': 0.72}
+[leak5] rel-f1/driver-dnf seed=2011-07-25 rows=24 feats=467 LEAK in 60 cols: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']; rebuilt labels usable at this seed: 292 rows ok
+[guard] {'path': 'constructors', 'build_secs': 13.4, 'lc_rows': 3651, 'q_rows': 45, 'q_cols': 76, 'label_rows': 41, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 2.7, 'lc_rows': 1993, 'q_rows': 25, 'q_cols': 76, 'label_rows': 24, 'rss_gb': 0.72}
+[leak5] rel-f1/driver-dnf seed=2012-04-20 rows=24 feats=467 LEAK in 63 cols: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']; rebuilt labels usable at this seed: 463 rows ok
+[guard] {'path': 'constructors', 'build_secs': 7.0, 'lc_rows': 3795, 'q_rows': 45, 'q_cols': 76, 'label_rows': 41, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 9.4, 'lc_rows': 2137, 'q_rows': 25, 'q_cols': 76, 'label_rows': 24, 'rss_gb': 0.72}
+[leak5] rel-f1/driver-dnf seed=2012-07-19 rows=24 feats=467 LEAK in 66 cols: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']; rebuilt labels usable at this seed: 535 rows ok
+[guard] {'path': 'constructors', 'build_secs': 10.2, 'lc_rows': 1658, 'q_rows': 20, 'q_cols': 76, 'label_rows': 17, 'rss_gb': 0.72}
+[guard] {'path': 'constructors', 'build_secs': 6.2, 'lc_rows': 1658, 'q_rows': 20, 'q_cols': 76, 'label_rows': 17, 'rss_gb': 0.72}
+[leak5] rel-f1/driver-dnf seed=2013-03-16 rows=22 feats=467 LEAK in 68 cols: ['dom.d.dnf_k3', 'dom.d.dnf_k5', 'dom.d.dnf_k10', 'dom.d.dnf_all', 'dom.d.dnf_365', 'dom.d.n_365']; rebuilt labels usable at this seed: 680 rows ok
+[leak5] FAIL (6 seeds)
