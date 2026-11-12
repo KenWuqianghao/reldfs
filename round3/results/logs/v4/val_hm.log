@@ -1,0 +1,8 @@
+[rb] rel-hm/user-churn k=1 folds=['bt1', 'bt2'] n_train=250000 build 23s
+[rb] c22_cad:base rel-hm/user-churn seed=0 val=0.709833 bt1_refit=0.690653 bt2_refit=0.709637 (82s rss 3578.12)
+[rb] c22_cad:base rel-hm/user-churn seed=1 val=0.710487 bt1_refit=0.691217 bt2_refit=0.710261 (139s rss 3578.12)
+[rb] c22_cad:base+cd rel-hm/user-churn seed=0 val=0.710923 bt1_refit=0.691676 bt2_refit=0.710841 (226s rss 3578.12)
+[rb] c22_cad:base+cd rel-hm/user-churn seed=1 val=0.710831 bt1_refit=0.691134 bt2_refit=0.710773 (309s rss 3578.12)
+[rb] rel-hm/user-churn k=1 folds=['bt1', 'bt2'] n_train=250000 build 25s
+[rb] c22_cad:base+cd+ax rel-hm/user-churn seed=0 val=0.711377 bt1_refit=0.691626 bt2_refit=0.711114 (116s rss 2706.57)
+[rb] c22_cad:base+cd+ax rel-hm/user-churn seed=1 val=0.711499 bt1_refit=0.692422 bt2_refit=0.711273 (205s rss 2706.57)

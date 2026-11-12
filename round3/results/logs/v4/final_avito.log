@@ -1,0 +1,20 @@
+[r6] rel-avito/user-visits anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 452999 (7s)
+[r6] with generic columns: 659 (113s)
+[r6] features 659; cold rows: anchors 0.285 val 0.174 test 0.298 (113s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2 seed=0 FFx=nan LF=nan val=0.7131 |  (168s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2 seed=1 FFx=nan LF=nan val=0.7130 |  (292s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2 seed=2 FFx=nan LF=nan val=0.7127 |  (349s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2 seed=3 FFx=nan LF=nan val=0.7136 |  (411s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2 seed=4 FFx=nan LF=nan val=0.7129 |  (490s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2: val pooled over 5 seeds = 0.7133
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 hl=2: test CSV written to preds/r6-B5/ (not scored); mean pred test cold 0.8164 warm 0.9045
+[r6] rel-avito/user-clicks anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 331723 (4s)
+[r6] with generic columns: 691 (75s)
+[r6] features 691; cold rows: anchors 0.285 val 0.169 test 0.391 (75s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=nan LF=nan val=0.6951 |  (86s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=nan LF=nan val=0.6939 |  (115s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=2 FFx=nan LF=nan val=0.6952 |  (145s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=3 FFx=nan LF=nan val=0.6948 |  (174s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=4 FFx=nan LF=nan val=0.6944 |  (204s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 5 seeds = 0.6949
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300: test CSV written to preds/r6-B3/ (not scored); mean pred test cold 0.0215 warm 0.0283

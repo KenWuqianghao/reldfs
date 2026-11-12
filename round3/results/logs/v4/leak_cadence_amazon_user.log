@@ -1,0 +1,5 @@
+[leak] cd 2016-01-01 entities=19987/19987 cols=41 ok
+[leak] cd 2015-10-01 entities=19991/19991 cols=41 ok
+[leak] cd 2009-07-09 entities=19918/19918 cols=41 ok
+[leak] cd 2015-01-01 entities=19960/19960 cols=41 ok
+[leak] rel-amazon/user-churn cd.*: PASS (4 seed times, plant=0)

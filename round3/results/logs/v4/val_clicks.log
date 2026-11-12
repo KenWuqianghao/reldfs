@@ -1,0 +1,35 @@
+[r6] rel-avito/user-clicks anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 331723 (3s)
+[r6] features 245; cold rows: anchors 0.285 val 0.169 test 0.391 (34s)
+[r6] rel-avito/user-clicks A2 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.6873 LF=0.6936 val=0.6789 | 05-01=0.6887 05-02=0.6892 05-03=0.6935 05-04=0.6894 05-05=0.6849 05-06=0.6746 05-07=0.6785 05-09=0.6938 05-10=0.6934 (47s)
+[r6]   val warm auc=0.7032 cold auc=0.5384 mean pred warm 0.0512 cold 0.0305
+[r6]   top gain: c_n14=0.165, s_per_day=0.113, c_e7=0.091, d_imax=0.068, c_nall=0.056, c_per_day=0.045, v_pmed=0.033, s_q=0.032, v_ncat=0.030, v_ads_per_day=0.021, c_e1=0.021, c_hctr=0.020
+[r6] rel-avito/user-clicks A2 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.6876 LF=0.6945 val=0.6789 | 05-01=0.6876 05-02=0.6896 05-03=0.6935 05-04=0.6888 05-05=0.6859 05-06=0.6752 05-07=0.6788 05-09=0.6941 05-10=0.6950 (61s)
+[r6] rel-avito/user-clicks A2 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.6790
+[r6] rel-avito/user-clicks A3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.6946 LF=0.7005 val=0.6924 | 05-01=0.6886 05-02=0.6998 05-03=0.7017 05-04=0.6947 05-05=0.6915 05-06=0.6826 05-07=0.6918 05-09=0.6960 05-10=0.7051 (77s)
+[r6]   val warm auc=0.7178 cold auc=0.5434 mean pred warm 0.0514 cold 0.0303
+[r6]   top gain: c_n14=0.130, c_e7=0.103, c_nall=0.088, s_per_day=0.077, d_imax=0.073, sh_c12=0.051, sh_vp6=0.041, v_ads_per_day=0.027, c_hctr=0.020, c_e1=0.019, pr_lctx=0.016, pr_cctr=0.016
+[r6] rel-avito/user-clicks A3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.6954 LF=0.7017 val=0.6915 | 05-01=0.6911 05-02=0.7008 05-03=0.7024 05-04=0.6973 05-05=0.6913 05-06=0.6824 05-07=0.6896 05-09=0.6977 05-10=0.7056 (93s)
+[r6] rel-avito/user-clicks A3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.6920
+[r6] rel-avito/user-clicks anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 331723 (3s)
+[r6] with generic columns: 803 (70s)
+[r6] features 803; cold rows: anchors 0.285 val 0.169 test 0.391 (70s)
+[r6] rel-avito/user-clicks B0 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=nan LF=nan val=0.6847 |  (72s)
+[r6]   val warm auc=0.7082 cold auc=0.5364 mean pred warm 0.0488 cold 0.0304
+[r6]   top gain: gen__gc.SearchInfo.SearchStream.SearchID.IsClick.sum=0.151, gen__gc.SearchInfo.SearchStream.SearchID.IsClick.mean=0.136, gen__gc.SearchInfo.SearchStream.SearchID.IsClick.max=0.056, gen__gc.SearchInfo.SearchStream.SearchID.IsClick.sum_4td=0.035, gen__pe.SearchInfo.UserID.CategoryID.Level.v0=0.030, gen__pe.SearchInfo.UserID.CategoryID.ParentCategoryID.s2=0.028, gen__SearchInfo.UserI
+[r6] rel-avito/user-clicks B0 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=nan LF=nan val=0.6872 |  (74s)
+[r6] rel-avito/user-clicks B0 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.6859
+[r6] rel-avito/user-clicks B1 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.6897 LF=0.6878 val=0.6830 | 05-01=0.6879 05-02=0.7018 05-03=0.6998 05-04=0.6897 05-05=0.6873 05-06=0.6804 05-07=0.6849 05-09=0.6821 05-10=0.6935 (107s)
+[r6]   val warm auc=0.7071 cold auc=0.5426 mean pred warm 0.0492 cold 0.0306
+[r6]   top gain: gen__gc.SearchInfo.SearchStream.SearchID.IsClick.sum=0.188, gen__gc.SearchInfo.SearchStream.SearchID.IsClick.mean=0.138, gen__gc.SearchInfo.SearchStream.SearchID.IsClick.max=0.062, gen__pe.SearchInfo.UserID.CategoryID.ParentCategoryID.s2=0.044, gen__pe.SearchInfo.UserID.CategoryID.ParentCategoryID.v1=0.027, gen__SearchInfo.UserID.n=0.026, gen__ft.SearchInfo.UserID.n_7d=0.023, gen_
+[r6] rel-avito/user-clicks B1 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.6903 LF=0.6883 val=0.6839 | 05-01=0.6912 05-02=0.7030 05-03=0.6982 05-04=0.6887 05-05=0.6888 05-06=0.6832 05-07=0.6830 05-09=0.6832 05-10=0.6934 (140s)
+[r6] rel-avito/user-clicks B1 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.6834
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.6965 LF=0.7002 val=0.6951 | 05-01=0.6904 05-02=0.7024 05-03=0.7027 05-04=0.6971 05-05=0.6951 05-06=0.6878 05-07=0.6923 05-09=0.6970 05-10=0.7034 (190s)
+[r6]   val warm auc=0.7196 cold auc=0.5349 mean pred warm 0.0494 cold 0.0307
+[r6]   top gain: c_n14=0.228, s_per_day=0.078, d_imax=0.070, c_e7=0.064, sh_vp6=0.033, sh_c12=0.031, v_ads_per_day=0.021, c_e3=0.018, gen__gc.SearchInfo.SearchStream.SearchID.ObjectType.v1.share=0.018, c_e1=0.015, gen__gc.SearchInfo.SearchStream.SearchID.Position.v3.share=0.015, c_hctr=0.014
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.6970 LF=0.7014 val=0.6939 | 05-01=0.6903 05-02=0.7008 05-03=0.7038 05-04=0.6997 05-05=0.6943 05-06=0.6861 05-07=0.6951 05-09=0.6989 05-10=0.7039 (238s)
+[r6] rel-avito/user-clicks B3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.6948
+[r6] rel-avito/user-clicks A3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.6946 LF=0.7005 val=0.6924 | 05-01=0.6886 05-02=0.6998 05-03=0.7017 05-04=0.6947 05-05=0.6915 05-06=0.6826 05-07=0.6918 05-09=0.6960 05-10=0.7051 (254s)
+[r6]   val warm auc=0.7178 cold auc=0.5434 mean pred warm 0.0514 cold 0.0303
+[r6]   top gain: c_n14=0.130, c_e7=0.103, c_nall=0.088, s_per_day=0.077, d_imax=0.073, sh_c12=0.051, sh_vp6=0.041, v_ads_per_day=0.027, c_hctr=0.020, c_e1=0.019, pr_lctx=0.016, pr_cctr=0.016
+[r6] rel-avito/user-clicks A3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.6954 LF=0.7017 val=0.6915 | 05-01=0.6911 05-02=0.7008 05-03=0.7024 05-04=0.6973 05-05=0.6913 05-06=0.6824 05-07=0.6896 05-09=0.6977 05-10=0.7056 (268s)
+[r6] rel-avito/user-clicks A3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.6920

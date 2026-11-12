@@ -1,0 +1,7 @@
+[rb] rel-amazon/item-churn k=1 folds=['bt1', 'bt2'] n_train=250000 build 61s
+[rb] c22_cad:base+hlq16 rel-amazon/item-churn seed=0 val=0.819509 bt1_refit=0.816910 bt2_refit=0.819318 (113s rss 3146.38)
+[rb] c22_cad:base+hlq16 rel-amazon/item-churn seed=1 val=0.819680 bt1_refit=0.817361 bt2_refit=0.819608 (154s rss 3146.38)
+[rb] c22_cad:base+hlq16+cd rel-amazon/item-churn seed=0 val=0.820946 bt1_refit=0.818593 bt2_refit=0.820918 (223s rss 3146.38)
+[rb] c22_cad:base+hlq16+cd rel-amazon/item-churn seed=1 val=0.820863 bt1_refit=0.818445 bt2_refit=0.820686 (294s rss 3146.38)
+[rb] c22_cad:base+hlq16+cd+ax rel-amazon/item-churn seed=0 val=0.821449 bt1_refit=0.818900 bt2_refit=0.821430 (385s rss 3146.38)
+[rb] c22_cad:base+hlq16+cd+ax rel-amazon/item-churn seed=1 val=0.821452 bt1_refit=0.819342 bt2_refit=0.821341 (463s rss 3146.38)

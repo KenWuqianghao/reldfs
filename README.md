@@ -13,20 +13,26 @@ RT-PluRel fine-tuned (0.7896) and Kapso (0.8119). These are self-reported number
 "Caveats" below. The entry was later submitted as RelBench issue #406, where the board's CI
 scored it at the same .7742.
 
-## The three entries
+## The four entries
 
 | entry | what it is | 12-task test mean AUROC | neural? | where |
 |---|---|---|---|---|
 | **v1: reldfs** | time-aware feature synthesis + LightGBM, schema-generic | **0.7742** | **no**: no neural network, no pretrained model | the `reldfs` package (this README) |
 | **v2: reldfs + TabPFN** | v1 on 7 tasks; hand-written features, a text score, recency weights and TabPFN v2 on 5 | **0.7785** | yes: a pretrained tabular foundation model on 3 tasks | [round3/](round3/) |
 | **v3: v2 with the full rel-f1 database** | v2's models on all 12 tasks; the rel-f1 test features use `get_db(upto_test_timestamp=False)` | **0.7953** | yes: as v2 | [round3/README.md](round3/README.md#v3-rel-f1-with-the-full-database) |
+| **v4: v3 with seven tasks changed** | v3's files on 5 tasks; replayed label anchors and window features on rel-avito, badge-state and cadence features on rel-stack, rel-hm and rel-amazon, and static-column summaries (incl. the length of `users.AboutMe`) | **0.8023** | yes: as v2 | [round3/README.md](round3/README.md#v4-seven-tasks-changed) |
 
 - v1 is the submitted entry (RelBench issue #406, CI-scored at .7742).
 - v2 was developed after v1's test scores were seen. Its choices were made on validation and
   train-internal folds only, and its test number comes from one report-only run.
 - v3 changes only the two rel-f1 prediction files. It was developed after v2's test scores
   were seen, and its test number also comes from one report-only run.
-- v2 and v3 are **Built with PriorLabs-TabPFN**. They use the TabPFN v2 classifier weights
+- v4 changes seven prediction files. It was developed after v3's test scores were seen, in
+  three steps on one day. Each step was chosen on validation by a rule written down first,
+  and test was scored once per step on files hashed before the run. It uses static columns
+  that are state as of the dump date (the length of `users.AboutMe` on rel-stack); see the
+  disclosure in round3/README.md.
+- v2, v3 and v4 are **Built with PriorLabs-TabPFN**. They use the TabPFN v2 classifier weights
   (`Prior-Labs/TabPFN-v2-clf`). These are under the Prior Labs License 1.1: Apache-2.0
   plus an attribution clause that requires the line "Built with PriorLabs-TabPFN". The
   `tabpfn` package is Apache-2.0. Neither the weights nor the package is redistributed here,

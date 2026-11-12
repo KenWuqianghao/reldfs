@@ -1,0 +1,6 @@
+[r6] rel-avito/user-visits anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 452999 (4s)
+[leak] 2015-05-14 users=64840/64840 cols=316 groups=8019/8019 ok
+[leak] 2015-05-08 users=47009/47009 cols=316 groups=8019/8019 ok
+[leak] 2015-04-27 users=17993/17993 cols=316 groups=8019/8019 ok
+[leak] 2015-05-02 users=36097/36097 cols=316 groups=8019/8019 ok
+[leak] rel-avito/user-visits: PASS (4 seed times, plant=0)

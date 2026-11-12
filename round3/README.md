@@ -157,6 +157,159 @@ make fulldb-val                 # the stale / static / roll validation arms
 make fulldb-final               # preds/r5-static-final/ (the two f1 files)
 ```
 
+## v4: seven tasks changed
+
+Added on 2026-11-12, after the v3 test numbers above were seen. Seven prediction files
+differ from v3. The five others (rel-f1 x2, rel-event x2, rel-trial) are v3's.
+
+**How v4 was built.** In three steps on one day. In each step the changes were chosen on
+validation by a rule written down before the numbers, the 12 files were hashed, and then
+test was scored once. No file was chosen or dropped after a test number.
+
+| step | rule (validation only, seeds 0 and 1) | files changed | 12-task test mean |
+|---|---|---|---|
+| v3 | | | .7953 |
+| 1 | gain of at least .005 on each seed | rel-avito/user-clicks | .7990 |
+| 2 | gain on validation and on train-internal folds, on each seed | rel-avito/user-visits, rel-stack/user-badge, rel-stack/user-engagement | .8018 |
+| 3 | same as step 2 | rel-hm/user-churn, rel-amazon/user-churn, rel-amazon/item-churn | **.8023** |
+
+**Disclosure: static columns.** `ab.*` (rel-stack/user-badge) is the length of
+`users.AboutMe`, and `ax.*` (rel-hm, rel-amazon/item-churn) holds numeric summaries of
+`customer.postal_code`, `product.brand`, `product.title` and `product.description`. These
+columns are in the hosted database on rows dated before the seed time, so rule 1 as written
+allows them. They are state as of the dump date. A user with profile text and no
+"Autobiographer" badge before the seed gets that badge later, and the model uses this.
+`ab.*` adds .015 AUROC on validation for user-badge. Without `ab.*` the badge features add
+.0015.
+
+### rel-avito (`harness/avito.py`)
+
+v3's user-clicks model scored .688 on validation and .651 on test. The cause is visible
+without test labels. The data start on 2015-04-25, and the number of distinct users per day
+doubles from 05-12. 39.1% of the user-clicks test rows (seed 05-14) are users with no row
+before the seed; in validation (seed 05-08) it is 16.9%. The hosted train table has 3 seed
+times (04-26, 04-30, 05-04), so no training row shows that population. Label rows rebuilt
+at anchors 05-09 and 05-10 do: their no-history users click at .018 and .013, against .031
+at earlier anchors.
+
+- Training rows: the task's label query is replayed with `task.make_table` at every daily
+  anchor from 04-26 whose 4-day window ends at or before the scoring seed (15 anchors; the
+  hosted train and validation tables are reproduced exactly, and the script asserts it).
+  The validation model uses anchors up to 05-04, the test model anchors up to 05-10.
+- Features: per-user counts in windows of 1, 2, 4, 7 and 14 days, decayed sums, recencies
+  and rates over searches, context-ad impressions, clicks, visits and phone requests;
+  smoothed rates of the user's static groups (device, agent, OS); click priors of the
+  searched categories and locations; decayed category shares; same-weekday lags; for
+  user-visits also distinct ads per day and per 4-day block. The generic `c16_r3` columns
+  are kept.
+- Model: LightGBM, 150 rounds, 7 leaves. user-visits weights the rows by anchor recency
+  (half-life 2 days); the same weights lost on user-clicks and are not used there.
+
+`FFx` is the mean over forward folds (fit on anchors up to `e` - 4 days, score the rows of
+anchor `e`, for `e` from 05-01 to 05-10 without 05-08). `LF` is the mean of the two folds
+after the validation seed. `val` is the hosted validation table; its labels are never fit.
+
+| task | arm | FFx | LF | val |
+|---|---|---|---|---|
+| user-clicks | v3 system (generic, hosted seeds, early-stopped on val) | | | .6877 / .6865 |
+| user-clicks | generic, daily anchors | .6897 / .6903 | .6878 / .6883 | .6830 / .6839 |
+| user-clicks | window features, daily anchors | .6946 / .6954 | .7005 / .7017 | .6924 / .6915 |
+| user-clicks | **B3: generic + window, daily anchors** | .6965 / .6970 | .7002 / .7014 | **.6951 / .6939** |
+| user-visits | v3 system | | | .7092 / .7095 |
+| user-visits | B5: generic + window + visit detail, daily anchors | .7126 / .7129 | .7099 / .7100 | .7125 / .7126 |
+| user-visits | **B5 with recency weights, half-life 2 d** | .7138 / .7139 | .7111 / .7112 | **.7131 / .7130** |
+
+### rel-stack (`candidates/c17_v4/badgefeat.py`)
+
+86% of the users who get a badge in a 91-day window have no post or comment in the 91
+days before it. `bd.*` gives the model the badge state: account age and days to the next
+account anniversary (the yearly "Yearling" badge), a reputation proxy from votes received,
+per badge name the count and the days since the last one, the one-time badges not yet
+earned, each post's score against the badge thresholds, and a projection of the next
+view-count badge. `ab.*` is described above.
+
+| task | variant (250k train rows) | val | fold bt1 | fold bt2 |
+|---|---|---|---|---|
+| user-badge | base (v3) | .8829 / .8830 | .8544 / .8526 | .8824 / .8823 |
+| user-badge | base+bd | .8843 / .8845 | .8558 / .8564 | .8823 / .8830 |
+| user-badge | **base+bd+ab** | **.8995 / .8993** | .8816 / .8812 | .8988 / .8987 |
+| user-engagement | base (v3) | .9006 / .9006 | .9083 / .9083 | .9004 / .9005 |
+| user-engagement | **base+bd** | **.9028 / .9027** | .9091 / .9090 | .9026 / .9017 |
+| user-engagement | base+bd+ab | .9028 / .9029 | .9090 / .9088 | .9026 / .9028 |
+
+### rel-hm and rel-amazon (`candidates/c17_v4/cadence.py`)
+
+The three churn labels ask if an entity that was active in the last period is active in
+the next one. `cd.*` describes the entity's rhythm in units of that period: counts in each
+of the last 12 periods, active-period shares, the run of active periods, the entity's own
+repeat rate, gap statistics, and the recency in units of the mean gap. `ax.*` is described
+above.
+
+| task | variant (250k train rows) | val | fold bt1 | fold bt2 |
+|---|---|---|---|---|
+| hm user-churn | base (v3) | .7098 / .7105 | .6907 / .6912 | .7096 / .7103 |
+| hm user-churn | **base+cd+ax** | **.7114 / .7115** | .6916 / .6924 | .7111 / .7113 |
+| amazon user-churn | base (v3) | .7038 / .7039 | .6900 / .6905 | .7038 / .7039 |
+| amazon user-churn | **base+cd** | **.7044 / .7048** | .6913 / .6908 | .7042 / .7047 |
+| amazon item-churn | base+hlq16 (v3) | .8195 / .8197 | .8169 / .8174 | .8193 / .8196 |
+| amazon item-churn | **base+hlq16+cd+ax** | **.8214 / .8215** | .8189 / .8193 | .8214 / .8213 |
+
+### How rule 1 is kept
+
+- Every database is the default `task.get_db()` (rel-f1 as in v3). The avito script
+  asserts the cut at the test timestamp.
+- Every new aggregate filters `time < seed time`. Each feature file has a leak check that
+  builds the features twice: from the database, and from the database with every row at
+  or after the seed removed. The two must be identical, at the validation seed, the test
+  seed and training seeds. Each check also runs with a planted leak (`RELDFS_PLANT=1`) and
+  must then fail. The check on `cadence.py` first failed and found a real bug (a table name
+  that shadowed the event table); the numbers above are from the fixed code.
+- A replayed label row at anchor `a` reads rows up to `a` + 4 days, which is at or before
+  the test timestamp for every anchor used.
+- Test labels were not used for any choice.
+
+### Tried in the same steps and not kept
+
+Under the same validation rules: recency weights on user-clicks; replayed anchors on the
+two rel-event tasks; fixed rounds in place of early stopping on user-ignore; success-rate
+priors, more registration text, and a pretrained text encoder
+(NeuML/pubmedbert-base-embeddings) on rel-trial; `ab.*` on user-engagement; `ax.*` on
+amazon user-churn; two more avito feature groups.
+
+### Test
+
+One report-only run of `relbench.submit.evaluate_submission` per step, on files hashed
+before the run.
+
+| task | test, v3 | **test, v4** |
+|---|---|---|
+| rel-avito/user-clicks | .6506 | **.6949** |
+| rel-avito/user-visits | .6696 | **.6810** |
+| rel-stack/user-badge | .8749 | **.8942** |
+| rel-stack/user-engagement | .9058 | **.9081** |
+| rel-hm/user-churn | .7096 | **.7111** |
+| rel-amazon/user-churn | .7075 | **.7090** |
+| rel-amazon/item-churn | .8260 | **.8290** |
+| 5 other tasks | (same CSVs) | (same CSVs) |
+| **12-task mean** | .7953 | **.8023** |
+
+- Final files: avito from `harness/avito.py` (5 seeds); the five others from
+  `harness/finalpass3.py` with `c17_v4` (1M train rows, refit on train + validation, 2
+  seeds). Per-file hashes: [results/final-r8.sha256.tsv](results/final-r8.sha256.tsv).
+- Logs: [results/logs/v4/](results/logs/v4/). They name the working candidates `c21_badge`
+  and `c22_cad`; `c17_v4` merges the two. Lines of `harness/avito.py` start with `[r6]`.
+- Rerun check of this folder's code: both avito files came out byte-identical, user-badge
+  `base+bd+ab` gave the same validation AUROC (.899484), and hm `base+cd+ax` gave .711370
+  against .711377 (the cadence aggregates run on 4 threads, so sums can differ in the last
+  bits).
+
+```sh
+make v4-data                    # AboutMe length and the static-column summaries (numbers only)
+make v4-leakcheck               # leak checks of avito.py, badgefeat.py, cadence.py
+make v4-val                     # the validation tables above
+make v4-final                   # the seven prediction files
+```
+
 ## Reproduce
 
 ```sh

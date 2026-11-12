@@ -1,0 +1,5 @@
+[leak] cd 2020-09-14 entities=20000/19750 cols=41 DIFF
+[leak] cd 2020-09-07 entities=20000/19700 cols=41 DIFF
+[leak] cd 2020-04-27 entities=20000/19542 cols=41 DIFF
+[leak] cd 2019-11-04 entities=20000/19246 cols=41 DIFF
+[leak] rel-hm/user-churn cd.*: FAIL (4 seed times, plant=1)

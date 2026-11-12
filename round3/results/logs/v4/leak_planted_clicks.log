@@ -1,0 +1,6 @@
+[r6] rel-avito/user-clicks anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 331723 (3s)
+[leak] 2015-05-14 users=64840/64840 cols=96 groups=8019/8019 ok
+[leak] 2015-05-08 users=62235/47009 cols=96 groups=8019/8019 DIFF in 29 user columns, group table same=False
+[leak] 2015-04-27 users=57209/17993 cols=96 groups=8019/8019 DIFF in 29 user columns, group table same=False
+[leak] 2015-05-02 users=59999/36097 cols=96 groups=8019/8019 DIFF in 29 user columns, group table same=False
+[leak] rel-avito/user-clicks: FAIL (4 seed times, plant=1)

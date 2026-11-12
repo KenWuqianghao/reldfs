@@ -1,0 +1,27 @@
+[r6] rel-avito/user-visits anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 452999 (3s)
+[r6] with generic columns: 759 (521s)
+[r6] features 759; cold rows: anchors 0.285 val 0.174 test 0.298 (521s)
+[r6] rel-avito/user-visits B0 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=nan LF=nan val=0.7072 |  (524s)
+[r6] rel-avito/user-visits B0 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=nan LF=nan val=0.7074 |  (527s)
+[r6] rel-avito/user-visits B0 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7075
+[r6] rel-avito/user-visits B1 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.7098 LF=0.7054 val=0.7069 | 05-01=0.7000 05-02=0.7090 05-03=0.7139 05-04=0.7084 05-05=0.7085 05-06=0.7209 05-07=0.7165 05-09=0.7054 05-10=0.7053 (584s)
+[r6] rel-avito/user-visits B1 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.7100 LF=0.7052 val=0.7076 | 05-01=0.7007 05-02=0.7083 05-03=0.7149 05-04=0.7090 05-05=0.7087 05-06=0.7209 05-07=0.7166 05-09=0.7056 05-10=0.7048 (637s)
+[r6] rel-avito/user-visits B1 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7074
+[r6] rel-avito/user-visits A3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.7102 LF=0.7082 val=0.7109 | 05-01=0.7008 05-02=0.7068 05-03=0.7130 05-04=0.7066 05-05=0.7086 05-06=0.7221 05-07=0.7174 05-09=0.7094 05-10=0.7070 (657s)
+[r6] rel-avito/user-visits A3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.7103 LF=0.7082 val=0.7110 | 05-01=0.7009 05-02=0.7073 05-03=0.7122 05-04=0.7072 05-05=0.7090 05-06=0.7227 05-07=0.7166 05-09=0.7095 05-10=0.7070 (677s)
+[r6] rel-avito/user-visits A3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7110
+[r6] rel-avito/user-visits B3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.7112 LF=0.7088 val=0.7110 | 05-01=0.7024 05-02=0.7086 05-03=0.7138 05-04=0.7082 05-05=0.7101 05-06=0.7225 05-07=0.7177 05-09=0.7098 05-10=0.7079 (745s)
+[r6] rel-avito/user-visits B3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.7109 LF=0.7087 val=0.7114 | 05-01=0.7014 05-02=0.7079 05-03=0.7134 05-04=0.7077 05-05=0.7097 05-06=0.7233 05-07=0.7178 05-09=0.7095 05-10=0.7079 (817s)
+[r6] rel-avito/user-visits B3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7112
+[r6] rel-avito/user-visits anchors 04-26..05-10 (15) hosted ['04-26', '04-30', '05-04'] rebuilt rows 452999 (3s)
+[r6] with generic columns: 771 (76s)
+[r6] features 771; cold rows: anchors 0.285 val 0.174 test 0.298 (76s)
+[r6] rel-avito/user-visits A3 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.7102 LF=0.7082 val=0.7109 | 05-01=0.7008 05-02=0.7068 05-03=0.7130 05-04=0.7066 05-05=0.7086 05-06=0.7221 05-07=0.7174 05-09=0.7094 05-10=0.7070 (98s)
+[r6] rel-avito/user-visits A3 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.7103 LF=0.7082 val=0.7110 | 05-01=0.7009 05-02=0.7073 05-03=0.7122 05-04=0.7072 05-05=0.7090 05-06=0.7227 05-07=0.7166 05-09=0.7095 05-10=0.7070 (119s)
+[r6] rel-avito/user-visits A3 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7110
+[r6] rel-avito/user-visits A5 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.7125 LF=0.7099 val=0.7125 | 05-01=0.7013 05-02=0.7093 05-03=0.7148 05-04=0.7095 05-05=0.7114 05-06=0.7259 05-07=0.7207 05-09=0.7112 05-10=0.7087 (141s)
+[r6] rel-avito/user-visits A5 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.7121 LF=0.7097 val=0.7125 | 05-01=0.7007 05-02=0.7083 05-03=0.7147 05-04=0.7097 05-05=0.7116 05-06=0.7253 05-07=0.7194 05-09=0.7111 05-10=0.7083 (163s)
+[r6] rel-avito/user-visits A5 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7126
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 seed=0 FFx=0.7126 LF=0.7099 val=0.7125 | 05-01=0.7009 05-02=0.7091 05-03=0.7158 05-04=0.7100 05-05=0.7116 05-06=0.7258 05-07=0.7203 05-09=0.7110 05-10=0.7087 (233s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300 seed=1 FFx=0.7129 LF=0.7100 val=0.7126 | 05-01=0.7026 05-02=0.7095 05-03=0.7154 05-04=0.7100 05-05=0.7124 05-06=0.7257 05-07=0.7203 05-09=0.7106 05-10=0.7094 (302s)
+[r6] rel-avito/user-visits B5 cfg=150|num_leaves=7,min_child_samples=300: val pooled over 2 seeds = 0.7126

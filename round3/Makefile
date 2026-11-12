@@ -8,7 +8,7 @@ export TABPFN_MODEL_CACHE_DIR ?= $(or $(RELDFS_DATA),data)/tabpfn
 D = base+domonly+era+noid+robust
 CHANGED = rel-f1/driver-top3 rel-f1/driver-dnf rel-trial/study-outcome rel-event/user-ignore rel-amazon/item-churn
 
-.PHONY: text select gate leakcheck final copy-unchanged hashes zip fulldb-leakcheck fulldb-val fulldb-final
+.PHONY: text select gate leakcheck final copy-unchanged hashes zip fulldb-leakcheck fulldb-val fulldb-final v4-data v4-leakcheck v4-val v4-final
 
 text:               ## rel-trial registration text for the point-in-time text score (~85 MB)
 	$(RUN) harness/fetch_trial_text.py
@@ -53,3 +53,32 @@ fulldb-val:         ## validation arms stale / static / roll, LightGBM on D, see
 fulldb-final:       ## the two f1 files of v3 -> preds/r5-static-final/ (static arm, refit on train+val)
 	$(RUN) harness/fulldb.py --task rel-f1/driver-dnf --variant "$(D)~$(D)+pfnk64" --seeds 0,1,2,3,4 --pfn-seeds 0,1 --no-roll --write-test --tag=-final
 	$(RUN) harness/fulldb.py --task rel-f1/driver-top3 --variant "$(D)+pfn" --seeds 0,1,2,3,4 --no-roll --write-test --tag=-final
+
+V4 = c17_v4
+v4-data:            ## numbers derived from static string columns the slim mirror drops
+	$(RUN) harness/fetch_stack_text.py
+	$(RUN) harness/fetch_aux.py
+
+v4-leakcheck:       ## db == db truncated before the seed, for each v4 feature file (RELDFS_PLANT=1: must fail)
+	$(RUN) harness/avito.py --task rel-avito/user-clicks --leakcheck --k 4
+	$(RUN) candidates/$(V4)/badgefeat.py --leakcheck
+	for t in rel-hm/user-churn rel-amazon/user-churn rel-amazon/item-churn; do $(RUN) candidates/$(V4)/cadence.py --task $$t --leakcheck || exit 1; done
+
+v4-val:             ## validation arms; the 250k cap is the gating cap of rounds 2 and 3
+	$(RUN) harness/avito.py --task rel-avito/user-clicks --arms B0,B1,A3,B3 --seeds 0,1
+	$(RUN) harness/avito.py --task rel-avito/user-visits --arms B5 --seeds 0,1
+	$(RUN) harness/avito.py --task rel-avito/user-visits --arms B5 --seeds 0,1 --halflife 2
+	RELDFS_TRAIN_CAP=250000 $(RUN) harness/rollbt.py --cand $(V4) --task rel-stack/user-badge --variants base,base+bd,base+bd+ab --seeds 0,1 --blocks 1
+	RELDFS_TRAIN_CAP=250000 $(RUN) harness/rollbt.py --cand $(V4) --task rel-stack/user-engagement --variants base,base+bd,base+bd+ab --seeds 0,1 --blocks 1
+	RELDFS_TRAIN_CAP=250000 $(RUN) harness/rollbt.py --cand $(V4) --task rel-hm/user-churn --variants base,base+cd,base+cd+ax --seeds 0,1 --blocks 1
+	RELDFS_TRAIN_CAP=250000 $(RUN) harness/rollbt.py --cand $(V4) --task rel-amazon/user-churn --variants base,base+cd,base+cd+ax --seeds 0,1 --blocks 1
+	RELDFS_TRAIN_CAP=250000 $(RUN) harness/rollbt.py --cand $(V4) --task rel-amazon/item-churn --variants base+hlq16,base+hlq16+cd,base+hlq16+cd+ax --seeds 0,1 --blocks 1
+
+v4-final:           ## the seven v4 files -> preds/r6-B3/, preds/r6-B5-hl2/, preds/final-v4/
+	$(RUN) harness/avito.py --task rel-avito/user-clicks --seeds 0,1,2,3,4 --no-folds --write-test
+	$(RUN) harness/avito.py --task rel-avito/user-visits --arms B5 --halflife 2 --seeds 0,1,2,3,4 --no-folds --write-test --tag=-hl2
+	$(RUN) harness/finalpass3.py --cand $(V4) --system v4 --seeds 0,1 --task rel-stack/user-badge --variant base+bd+ab
+	$(RUN) harness/finalpass3.py --cand $(V4) --system v4 --seeds 0,1 --task rel-stack/user-engagement --variant base+bd
+	$(RUN) harness/finalpass3.py --cand $(V4) --system v4 --seeds 0,1 --task rel-hm/user-churn --variant base+cd+ax
+	$(RUN) harness/finalpass3.py --cand $(V4) --system v4 --seeds 0,1 --task rel-amazon/user-churn --variant base+cd
+	$(RUN) harness/finalpass3.py --cand $(V4) --system v4 --seeds 0,1 --task rel-amazon/item-churn --variant base+hlq16+cd+ax

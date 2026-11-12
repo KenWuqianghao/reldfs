@@ -50,7 +50,7 @@ def main() -> int:
     t0 = time.time()
     ctx = load_ctx(name)
     task = ctx.task
-    assert len(ctx.train) <= mod.MAX_TRAIN
+    # v4: a larger train table is cut to mod.MAX_TRAIN random rows by mod.features (n_train is logged)
     X, fr = mod.features(ctx)
     groups = [[mod.variant_cfg(name, sv) for sv in g.split("|")] for g in args.variant.split("~")]
     seeds = [int(s) for s in args.seeds.split(",")]

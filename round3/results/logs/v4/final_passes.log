@@ -1,0 +1,15 @@
+[final3] rel-amazon/item-churn seed=0 val=0.822683 (361s)
+[final3] rel-amazon/item-churn seed=1 val=0.822630 (563s)
+[final3] rel-amazon/item-churn val 2-seed 0.822753 2-seed 0.822753 csv final-r8 done 564s
+[final3] rel-amazon/user-churn seed=0 val=0.705639 (712s)
+[final3] rel-amazon/user-churn seed=1 val=0.705583 (1134s)
+[final3] rel-amazon/user-churn val 2-seed 0.705759 2-seed 0.705759 csv final-r8 done 1134s
+[final3] rel-hm/user-churn seed=0 val=0.713403 (654s)
+[final3] rel-hm/user-churn seed=1 val=0.713574 (919s)
+[final3] rel-hm/user-churn val 2-seed 0.713751 2-seed 0.713751 csv final-r8 done 919s
+[final3] rel-stack/user-badge seed=0 val=0.901543 (514s)
+[final3] rel-stack/user-badge seed=1 val=0.901744 (1024s)
+[final3] rel-stack/user-badge val 2-seed 0.901818 2-seed 0.901818 csv final-r7 done 1025s
+[final3] rel-stack/user-engagement seed=0 val=0.904685 (234s)
+[final3] rel-stack/user-engagement seed=1 val=0.904768 (405s)
+[final3] rel-stack/user-engagement val 2-seed 0.904831 2-seed 0.904831 csv final-r7 done 405s

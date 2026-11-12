@@ -1,0 +1,10 @@
+[rb] rel-stack/user-badge k=1 folds=['bt1', 'bt2'] n_train=250000 build 58s
+[rb] c21_badge:base rel-stack/user-badge seed=0 val=0.882856 bt1_refit=0.854439 bt2_refit=0.882438 (214s rss 2128.20)
+[rb] c21_badge:base rel-stack/user-badge seed=1 val=0.883008 bt1_refit=0.852552 bt2_refit=0.882333 (313s rss 2128.20)
+[rb] c21_badge:base+bd rel-stack/user-badge seed=0 val=0.883878 bt1_refit=0.857577 bt2_refit=0.882515 (434s rss 2242.71)
+[rb] c21_badge:base+bd rel-stack/user-badge seed=1 val=0.883989 bt1_refit=0.854125 bt2_refit=0.882984 (538s rss 2242.71)
+[rb] rel-stack/user-badge k=1 folds=['bt1', 'bt2'] n_train=250000 build 28s
+[rb] c21_badge:base+bd rel-stack/user-badge seed=0 val=0.884303 bt1_refit=0.855849 bt2_refit=0.882271 (189s rss 2322.53)
+[rb] c21_badge:base+bd rel-stack/user-badge seed=1 val=0.884541 bt1_refit=0.856396 bt2_refit=0.883027 (322s rss 2778.66)
+[rb] c21_badge:base+bd+ab rel-stack/user-badge seed=0 val=0.899484 bt1_refit=0.881648 bt2_refit=0.898837 (472s rss 2778.66)
+[rb] c21_badge:base+bd+ab rel-stack/user-badge seed=1 val=0.899255 bt1_refit=0.881169 bt2_refit=0.898732 (596s rss 2778.66)

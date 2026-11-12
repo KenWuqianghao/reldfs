@@ -1,0 +1,5 @@
+[leak] cd 2020-09-14 entities=19750/19750 cols=41 ok
+[leak] cd 2020-09-07 entities=19700/19700 cols=41 ok
+[leak] cd 2020-04-27 entities=19542/19542 cols=41 ok
+[leak] cd 2019-11-04 entities=19246/19246 cols=41 ok
+[leak] rel-hm/user-churn cd.*: PASS (4 seed times, plant=0)

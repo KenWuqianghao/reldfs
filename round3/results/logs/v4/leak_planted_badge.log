@@ -1,0 +1,6 @@
+[leak] bd 2021-01-01 users=255360/255360 cols=149 ok
+[leak] bd 2020-10-01 users=247398/247398 cols=149 DIFF
+[leak] bd 2015-07-09 users=54976/54976 cols=149 DIFF
+[leak] bd 2018-04-05 users=157098/157098 cols=149 DIFF
+[leak] bd 2015-04-09 users=48955/48955 cols=149 DIFF
+[leak] rel-stack/user-badge bd.*: FAIL (5 seed times, plant=1)
